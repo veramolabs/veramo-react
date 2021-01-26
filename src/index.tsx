@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { VeramoProvider } from './lib/veramo-react'
+import { defaultAgent, AgentInterfaces } from './agent'
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <VeramoProvider<AgentInterfaces> agent={defaultAgent}>
+      <App />
+    </VeramoProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
