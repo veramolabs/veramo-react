@@ -22,7 +22,8 @@
     "typescript": "^4.0.3"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "yarn build"
   },
   "prettier": {
     "jsxBracketSameLine": false,
