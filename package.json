@@ -1,13 +1,17 @@
 {
-  "name": "veramo-react",
+  "name": "@veramo-community/veramo-react",
   "version": "0.1.0",
   "private": true,
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "package.json"
+  ],
   "peerDependencies": {
     "@veramo/core": "^1.1.1-next.1",
     "@veramo/remote-client": "^1.1.1-next.1",
-    "react": "*"
+    "react": "^16.8.0 || ^17.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
@@ -18,7 +22,8 @@
     "husky": "^4.3.8",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
-    "react": "*",
+    "react": "^17.0.1",
+    "react-dom": "17.0.1",
     "typescript": "^4.0.3"
   },
   "scripts": {
