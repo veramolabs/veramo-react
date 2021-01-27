@@ -4,13 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { VeramoProvider } from './lib/veramo-react'
-import { defaultAgent, AgentInterfaces } from './agent'
-
-
+import { defaultAgent } from './setup'
 
 ReactDOM.render(
   <React.StrictMode>
-    <VeramoProvider<AgentInterfaces> agent={defaultAgent}>
+    <VeramoProvider agent={defaultAgent}>
       <App />
     </VeramoProvider>
   </React.StrictMode>,
