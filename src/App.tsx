@@ -3,7 +3,7 @@ import './App.css';
 import { useAgent } from './setup'
 
 function App() {
-  const { agent, agents, addAgentConfig } = useAgent()
+  const { agent, agents, addAgentConfig, removeAgentConfig, getAgentConfig, updateAgentConfig } = useAgent()
 
   useEffect(() => {
 
@@ -39,11 +39,23 @@ function App() {
     })
   }
 
+  const changeName = (index: number, name: string) => {
+    const config = getAgentConfig(index)
+    config.context.name = name
+    updateAgentConfig(index, config)
+  }
+
   return (
     <div>
       Agents: 
         <ul>
-          {agents.map(a => (<li>{a.context?.name}</li>))}
+          {agents.map((a, index) => (
+            <li key={index}>
+              {a.context?.name} 
+              <button onClick={() => changeName(index, 'New name')}>Rename</button>
+              <button onClick={() => removeAgentConfig(index)}>Remove</button>
+            </li>
+          ))}
         </ul>
 
       <button onClick={addBob}>Add agent</button>
