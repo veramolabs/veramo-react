@@ -1,6 +1,6 @@
 {
   "name": "@veramo-community/veramo-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "publishConfig": {
@@ -26,8 +26,7 @@
     "typescript": "^4.0.3"
   },
   "scripts": {
-    "build": "tsc",
-    "postinstall": "yarn build"
+    "build": "tsc"
   },
   "prettier": {
     "jsxBracketSameLine": false,

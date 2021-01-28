@@ -7,5 +7,6 @@ Veramo React makes it easy to interact with multiple agents in React Application
 - Clone repo
 - Build project ~ `yarn build`
 - Link npm/yarn ~ `yarn link`
+- Link to your project's react version `yarn link ../<PROJECT_NAME>/node_modules/react`
 
 In your react project run ~ `yarn link veramo-react`
