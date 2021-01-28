@@ -5,11 +5,11 @@ import {
   getStoredAgentConfigs,
   storeAgentConfigs,
 } from './utils'
-import { ISerializedAgentConfig } from './types'
+import { ISerializedAgentConfig, IAgent, IContext } from './types'
 
 const VeramoReactContext = React.createContext<any>({})
 
-export function VeramoProvider<T extends IPluginMethodMap>(props: {
+export function VeramoProvider<T extends IPluginMethodMap = IAgent>(props: {
   children: any
   agent: TAgent<T>
 }) {
