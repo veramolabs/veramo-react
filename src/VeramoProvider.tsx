@@ -11,53 +11,42 @@ const VeramoReactContext = React.createContext<any>({})
 
 export function VeramoProvider<T extends IPluginMethodMap = IAgent>(props: {
   children: any
-  agent: TAgent<T>
 }) {
-  const [agents, setAgents] = useState<Array<TAgent<T>>>([props.agent])
+  const [agents, setAgents] = useState<Array<TAgent<T>>>([])
 
   useEffect(() => {
-    setAgents(
-      [props.agent].concat(
-        getStoredAgentConfigs().map((c) => createAgentFromConfig<T>(c)),
-      ),
-    )
-  }, [props.agent])
+    setAgents(getStoredAgentConfigs().map((c) => createAgentFromConfig<T>(c)))
+  }, [])
 
   const addAgentConfig = (config: ISerializedAgentConfig) => {
     const configs = getStoredAgentConfigs().concat(config)
     storeAgentConfigs(configs)
-    setAgents(
-      [props.agent].concat(configs.map((c) => createAgentFromConfig<T>(c))),
-    )
+    setAgents(configs.map((c) => createAgentFromConfig<T>(c)))
   }
 
   const removeAgentConfig = (index: number) => {
     const configs = getStoredAgentConfigs()
-    configs.splice(index - 1, 1)
+    configs.splice(index, 1)
     storeAgentConfigs(configs)
-    setAgents(
-      [props.agent].concat(configs.map((c) => createAgentFromConfig<T>(c))),
-    )
+    setAgents(configs.map((c) => createAgentFromConfig<T>(c)))
   }
 
   const getAgentConfig = (index: number): ISerializedAgentConfig => {
     const configs = getStoredAgentConfigs()
-    return configs[index - 1]
+    return configs[index]
   }
 
   const updateAgentConfig = (index: number, config: ISerializedAgentConfig) => {
     const configs = getStoredAgentConfigs()
-    configs[index - 1] = config
+    configs[index] = config
     storeAgentConfigs(configs)
-    setAgents(
-      [props.agent].concat(configs.map((c) => createAgentFromConfig<T>(c))),
-    )
+    setAgents(configs.map((c) => createAgentFromConfig<T>(c)))
   }
 
   return (
     <VeramoReactContext.Provider
       value={{
-        agent: props.agent,
+        agent: agents[0],
         agents,
         addAgentConfig,
         removeAgentConfig,
@@ -75,7 +64,7 @@ export function useVeramo<
   C = Record<string, any>
 >() {
   return useContext<{
-    agent: TAgent<T> & { context?: C }
+    agent?: TAgent<T> & { context?: C }
     agents: Array<TAgent<T> & { context?: C }>
     addAgentConfig: (config: ISerializedAgentConfig) => void
     getAgentConfig: (index: number) => ISerializedAgentConfig

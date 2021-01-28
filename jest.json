@@ -15,5 +15,6 @@
     }
   },
   "testEnvironment": "jsdom",
-  "automock": false
+  "automock": false,
+  "setupFilesAfterEnv": ["<rootDir>/jest-setup.js"]
 }
