@@ -18,13 +18,14 @@ export type IAgent = IDataStore &
   IResolver &
   IMessageHandler
 
-export interface IContext {
+export interface IContext extends Record<string, any> {
   id?: string
+  name?: string
   picture?: string
 }
 
 export interface ISerializedAgentConfig {
-  context: Record<string, any>
+  context: IContext
   remoteAgents: Array<{
     url: string
     token?: string
