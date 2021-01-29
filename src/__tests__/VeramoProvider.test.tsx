@@ -1,60 +1,34 @@
-import React, { useEffect, useState } from 'react'
-import { render, screen } from '@testing-library/react'
+import React from 'react'
+import { renderHook, act } from '@testing-library/react-hooks'
 import { VeramoProvider, useVeramo } from '../VeramoProvider'
 
 beforeEach(() => {
   window.localStorage.clear()
 })
 
+const wrapper = (props: any) => (
+  <VeramoProvider>{props.children}</VeramoProvider>
+)
+
 test('agent list should be empty by default', async () => {
-  const App = () => {
-    const { agents } = useVeramo()
-    return <div>{agents.length === 0 && <div>Empty list</div>}</div>
-  }
+  const { result } = renderHook(() => useVeramo(), { wrapper })
 
-  render(
-    <VeramoProvider>
-      <App />
-    </VeramoProvider>,
-  )
-
-  expect(await screen.getByText(/Empty list/)).toBeInTheDocument()
-
-  // screen.debug();
+  expect(result.current.agents).toHaveLength(0)
+  expect(typeof result.current.addAgentConfig).toBe('function')
 })
 
 test('should be able to add agent config', async () => {
-  const App = () => {
-    const { addAgentConfig, agents } = useVeramo()
+  const { result } = renderHook(() => useVeramo(), { wrapper })
 
-    useEffect(() => {
-      if (agents.length === 0) {
-        // Adding first agent
-        addAgentConfig({
-          context: {
-            id: 'foo',
-          },
-          remoteAgents: [],
-        })
-      }
-    }, [agents])
-
-    return (
-      <ul>
-        {agents.map((a) => (
-          <li key={a.context?.id}>{a.context?.id}</li>
-        ))}
-      </ul>
-    )
-  }
-
-  render(
-    <VeramoProvider>
-      <App />
-    </VeramoProvider>,
+  act(() =>
+    result.current.addAgentConfig({
+      context: {
+        id: 'foo',
+      },
+      remoteAgents: [],
+    }),
   )
-  expect(await screen.getByText(/foo/)).toBeInTheDocument()
-  const items = await screen.findAllByRole('listitem')
-  expect(items).toHaveLength(1)
-  // screen.debug();
+
+  expect(result.current.agents).toHaveLength(1)
+  expect(result.current.agents[0].context?.id).toEqual('foo')
 })
