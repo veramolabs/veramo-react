@@ -1669,6 +1669,20 @@
     debug "^4.1.1"
     openapi-types "^7.0.0"
 
+"@veramo/selective-disclosure@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@veramo/selective-disclosure/-/selective-disclosure-1.1.0.tgz#1fd4b5705be411814dbe5edc51ec3b31048e0b58"
+  integrity sha512-ovxn/9Q4sN03+e/rztXrs4QlOA3oieT9iz2AJrGj2ckSZk6CoMKHds9hv6bQNZx0RXRbbWr3zX4A4hpsglgQQQ==
+  dependencies:
+    "@veramo/core" "^1.1.0"
+    "@veramo/credential-w3c" "^1.1.0"
+    "@veramo/data-store" "^1.1.0"
+    "@veramo/did-jwt" "^1.1.0"
+    "@veramo/message-handler" "^1.1.0"
+    blakejs "^1.1.0"
+    debug "^4.1.1"
+    did-jwt "4.8.1"
+
 JSONStream@^1.0.4:
   version "1.3.5"
   resolved "https://registry.npmjs.org/JSONStream/-/JSONStream-1.3.5.tgz#3208c1f08d3a4d99261ab64f92302bc15e111ca0"

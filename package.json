@@ -28,6 +28,7 @@
     "@veramo/data-store": "^1.1.0",
     "@veramo/did-comm": "^1.1.0",
     "@veramo/remote-client": "^1.1.1-next.1",
+    "@veramo/selective-disclosure": "^1.1.0",
     "babel-jest": "^26.6.3",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
@@ -79,5 +80,13 @@
   "dependencies": {
     "ts-jest": "^26.4.4",
     "uuid": "^8.3.2"
-  }
+  },
+  "author": "Simonas Karuzas <simonas.karuzas@mesh.xyz>",
+  "contributors": [
+    {
+      "name": "Jason Healy",
+      "email": "jason.healy@mesh.xyz"
+    }
+  ],
+  "license": "Apache-2.0"
 }

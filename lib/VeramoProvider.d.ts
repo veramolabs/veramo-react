@@ -4,7 +4,17 @@ import { ISerializedAgentConfig, IAgent, IContext } from './types'
 export declare function VeramoProvider<
   T extends IPluginMethodMap = IAgent,
   C extends Record<string, any> = IContext
->(props: { children: any }): JSX.Element
+>(props: {
+  children: any
+  initialValues?: {
+    agents?: Array<
+      TAgent<T> & {
+        context?: C
+      }
+    >
+    configs?: Array<ISerializedAgentConfig>
+  }
+}): JSX.Element
 export declare function useVeramo<T extends IPluginMethodMap, C = IContext>(): {
   agent?:
     | ({ [P in keyof T]: import('@veramo/core').RemoveContext<T[P]> } &
@@ -19,8 +29,13 @@ export declare function useVeramo<T extends IPluginMethodMap, C = IContext>(): {
   >
   activeAgentId?: string | undefined
   setActiveAgentId: (id: string) => void
+  addAgent: (
+    agent: TAgent<T> & {
+      context?: C
+    },
+  ) => void
+  removeAgent: (id: string) => void
   addAgentConfig: (config: ISerializedAgentConfig) => void
   getAgentConfig: (id: string) => ISerializedAgentConfig
-  removeAgentConfig: (id: string) => void
   updateAgentConfig: (id: string, config: ISerializedAgentConfig) => void
 }
