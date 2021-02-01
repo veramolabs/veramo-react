@@ -192,7 +192,14 @@ test('should be able to update agent config', () => {
     }),
   )
 
-  expect(result.current.agents).toHaveLength(2)
+  act(() => {
+    const agent = createAgent<IAgent, IContext>({
+      context: { id: 'lorem' },
+    })
+    result.current.addAgent(agent)
+  })
+
+  expect(result.current.agents).toHaveLength(3)
   const secondAgentId = result.current.agents[1].context.id as string
 
   act(() => {
@@ -201,6 +208,7 @@ test('should be able to update agent config', () => {
 
     result.current.updateAgentConfig(secondAgentId, config)
   })
+  expect(result.current.agents).toHaveLength(3)
 
   expect(result.current.agents[1].context.name).toEqual('baz')
 })
@@ -257,61 +265,14 @@ test('should be possible to pass initial values as props', () => {
     },
   })
 
-  const remoteConfig1 = {
-    context: {
-      id: 'remote1',
-      name: 'baz',
-    },
-    remoteAgents: [
-      {
-        url: 'https://example.com/agent',
-        enabledMethods: ['resolveDid'],
-      },
-      {
-        url: 'https://example.org/agent',
-        token: '12345',
-        enabledMethods: ['didManagerCreate'],
-      },
-    ],
-  }
-
-  const remoteConfig2 = {
-    context: {
-      id: 'remote2',
-    },
-    remoteAgents: [
-      {
-        url: 'https://example.org/agent',
-        enabledMethods: ['resolveDid'],
-      },
-    ],
-  }
-
-  const remoteConfig3 = {
-    context: {
-      id: 'remote3',
-    },
-    remoteAgents: [
-      {
-        url: 'https://example.org/agent3',
-        enabledMethods: ['resolveDid'],
-      },
-    ],
-  }
-
   const wrapper = (props: any) => (
-    <VeramoProvider<IAgent, IContext>
-      initialValues={{
-        agents: [localAgent1, localAgent2],
-        configs: [remoteConfig1, remoteConfig2, remoteConfig3],
-      }}
-    >
+    <VeramoProvider<IAgent, IContext> agents={[localAgent1, localAgent2]}>
       {props.children}
     </VeramoProvider>
   )
 
   const { result } = renderHook(() => useVeramo(), { wrapper })
-  expect(result.current.agents).toHaveLength(5)
+  expect(result.current.agents).toHaveLength(2)
 
   act(() =>
     result.current.addAgentConfig({
@@ -329,11 +290,11 @@ test('should be possible to pass initial values as props', () => {
     result.current.addAgent(agent)
   })
 
-  expect(result.current.agents).toHaveLength(7)
+  expect(result.current.agents).toHaveLength(4)
 
   act(() => {
     result.current.removeAgent(result.current.activeAgentId as string)
   })
-  expect(result.current.agents).toHaveLength(6)
+  expect(result.current.agents).toHaveLength(3)
   expect(result.current.activeAgentId).toEqual('bar')
 })

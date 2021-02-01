@@ -6,16 +6,16 @@ export declare function VeramoProvider<
   C extends Record<string, any> = IContext
 >(props: {
   children: any
-  initialValues?: {
-    agents?: Array<
-      TAgent<T> & {
-        context?: C
-      }
-    >
-    configs?: Array<ISerializedAgentConfig>
-  }
+  agents?: Array<
+    TAgent<T> & {
+      context?: C
+    }
+  >
 }): JSX.Element
-export declare function useVeramo<T extends IPluginMethodMap, C = IContext>(): {
+export declare function useVeramo<
+  T extends IPluginMethodMap = IAgent,
+  C extends Record<string, any> = IContext
+>(): {
   agent?:
     | ({ [P in keyof T]: import('@veramo/core').RemoveContext<T[P]> } &
         import('@veramo/core').IAgent & {
