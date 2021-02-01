@@ -34,5 +34,6 @@ export interface ISerializedAgentConfig {
     token?: string
     enabledMethods: Array<string>
     schema?: IAgentPluginSchema
+    schemaUrl?: string
   }>
 }

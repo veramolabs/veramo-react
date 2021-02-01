@@ -1,9 +1,11 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { TAgent, IPluginMethodMap } from '@veramo/core'
+import { TAgent, IPluginMethodMap, IAgentPlugin } from '@veramo/core'
 import {
   createAgentFromConfig,
   getStoredAgentConfigs,
   storeAgentConfigs,
+  storeActiveAgentId,
+  getStoredActiveAgentId,
 } from './utils'
 import { v4 as uuidv4 } from 'uuid'
 import { ISerializedAgentConfig, IAgent, IContext } from './types'
@@ -13,17 +15,32 @@ const VeramoReactContext = React.createContext<any>({})
 export function VeramoProvider<
   T extends IPluginMethodMap = IAgent,
   C extends Record<string, any> = IContext
->(props: { children: any; agents?: Array<TAgent<T> & { context?: C }> }) {
+>(props: {
+  children: any
+  agents?: Array<TAgent<T> & { context?: C }>
+  plugins?: IAgentPlugin[]
+}) {
   const [agents, setAgents] = useState<Array<TAgent<T> & { context?: C }>>(
     (props.agents || []).concat(
-      getStoredAgentConfigs().map((c) => createAgentFromConfig(c)),
+      getStoredAgentConfigs().map((c) =>
+        createAgentFromConfig(c, props.plugins),
+      ),
     ),
   )
-  const [activeAgentId, setActiveAgentId] = useState<string | undefined>(
-    props.agents && props.agents.length > 0
+  console.log(getStoredActiveAgentId())
+  const [activeAgentId, setActiveAgentIdInState] = useState<string | undefined>(
+    getStoredActiveAgentId()
+      ? getStoredActiveAgentId()
+      : props.agents && props.agents.length > 0
       ? props.agents[0].context?.id
       : undefined,
   )
+  console.log(activeAgentId)
+
+  const setActiveAgentId = (id?: string) => {
+    storeActiveAgentId(id)
+    setActiveAgentIdInState(id)
+  }
 
   useEffect(() => {
     if (!activeAgentId && agents.length > 0) {
@@ -48,7 +65,7 @@ export function VeramoProvider<
     }
     const configs = getStoredAgentConfigs().concat(config)
     storeAgentConfigs(configs)
-    addAgent(createAgentFromConfig(config))
+    addAgent(createAgentFromConfig(config, props.plugins))
   }
 
   const removeAgent = (id: string) => {
@@ -70,6 +87,12 @@ export function VeramoProvider<
     return config
   }
 
+  function getAgent<T>(id: string): T {
+    const agent = agents.filter((a) => a.context?.id !== id)
+    if (!agent) throw Error('Agent not found')
+    return (agent as any) as T
+  }
+
   const updateAgentConfig = (id: string, config: ISerializedAgentConfig) => {
     validateContext(config.context)
     const configs = getStoredAgentConfigs()
@@ -82,7 +105,7 @@ export function VeramoProvider<
     if (oldAgent) {
       const agentIndex = agents.indexOf(oldAgent)
       const newAgents = [...agents]
-      newAgents[agentIndex] = createAgentFromConfig(config)
+      newAgents[agentIndex] = createAgentFromConfig(config, props.plugins)
       setAgents(newAgents)
     }
   }
@@ -99,6 +122,7 @@ export function VeramoProvider<
         addAgentConfig,
         updateAgentConfig,
         getAgentConfig,
+        getAgent,
       }}
     >
       {props.children}
@@ -120,5 +144,6 @@ export function useVeramo<
     addAgentConfig: (config: ISerializedAgentConfig) => void
     getAgentConfig: (id: string) => ISerializedAgentConfig
     updateAgentConfig: (id: string, config: ISerializedAgentConfig) => void
+    getAgent: (id: string) => TAgent<T> & { context: C }
   }>(VeramoReactContext)
 }
