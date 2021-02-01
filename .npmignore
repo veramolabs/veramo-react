@@ -2,7 +2,7 @@
 /node_modules
 babel.config.js
 commitlint.config.js
-jest-setup.jest
+jest-setup.js
 jest.json
 tsconfig.json
 yarn.lock
