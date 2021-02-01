@@ -1,13 +1,15 @@
 import React from 'react'
 import { renderHook, act } from '@testing-library/react-hooks'
+import { createAgent } from '@veramo/core'
 import { VeramoProvider, useVeramo } from '../VeramoProvider'
+import { IAgent, IContext } from '../types'
 
 beforeEach(() => {
   window.localStorage.clear()
 })
 
 const wrapper = (props: any) => (
-  <VeramoProvider>{props.children}</VeramoProvider>
+  <VeramoProvider<IAgent, IContext>>{props.children}</VeramoProvider>
 )
 
 test('agent list should be empty by default', async () => {
@@ -18,9 +20,23 @@ test('agent list should be empty by default', async () => {
   expect(result.current.activeAgentId).toBeUndefined()
   expect(typeof result.current.setActiveAgentId).toBe('function')
   expect(typeof result.current.addAgentConfig).toBe('function')
-  expect(typeof result.current.removeAgentConfig).toBe('function')
+  expect(typeof result.current.removeAgent).toBe('function')
   expect(typeof result.current.updateAgentConfig).toBe('function')
   expect(typeof result.current.getAgentConfig).toBe('function')
+})
+
+test('should be able to add local agent', () => {
+  const { result } = renderHook(() => useVeramo(), { wrapper })
+
+  const agent = createAgent<IAgent, IContext>({
+    context: {
+      id: 'foo',
+    },
+  })
+
+  act(() => result.current.addAgent(agent))
+
+  expect(result.current.agent?.context.id).toEqual('foo')
 })
 
 test('should be able to add agent config', async () => {
@@ -86,6 +102,13 @@ test('should be able to remove agent config', () => {
     }),
   )
 
+  act(() => {
+    const agent = createAgent<IAgent, IContext>({
+      context: { id: 'baz' },
+    })
+    result.current.addAgent(agent)
+  })
+
   act(() =>
     result.current.addAgentConfig({
       context: {
@@ -95,20 +118,27 @@ test('should be able to remove agent config', () => {
     }),
   )
 
-  expect(result.current.agents).toHaveLength(2)
-  const active = result.current.activeAgentId
+  expect(result.current.agents).toHaveLength(3)
+  const originalActive = result.current.activeAgentId
 
   act(() => {
-    if (result.current.agents[1].context.id)
-      result.current.removeAgentConfig(result.current.agents[1].context.id)
+    if (result.current.agents[2].context.id)
+      result.current.removeAgent(result.current.agents[2].context.id)
   })
 
-  expect(result.current.agents).toHaveLength(1)
-  expect(result.current.activeAgentId).toEqual(active)
+  expect(result.current.agents).toHaveLength(2)
+  expect(result.current.activeAgentId).toEqual(originalActive)
 })
 
 test('should reset active agent id if removing active agent', () => {
   const { result } = renderHook(() => useVeramo(), { wrapper })
+
+  act(() => {
+    const agent = createAgent<IAgent, IContext>({
+      context: { id: 'baz' },
+    })
+    result.current.addAgent(agent)
+  })
 
   act(() =>
     result.current.addAgentConfig({
@@ -128,15 +158,17 @@ test('should reset active agent id if removing active agent', () => {
     }),
   )
 
-  expect(result.current.agents).toHaveLength(2)
+  expect(result.current.agents).toHaveLength(3)
+
   const secondAgentId = result.current.agents[1].context.id
 
-  act(() =>
-    result.current.removeAgentConfig(result.current.activeAgentId as string),
-  )
+  act(() => result.current.removeAgent(result.current.activeAgentId as string))
 
-  expect(result.current.agents).toHaveLength(1)
-  expect(result.current.activeAgentId).not.toEqual(secondAgentId)
+  expect(result.current.agents).toHaveLength(2)
+  expect(result.current.activeAgentId).toEqual(secondAgentId)
+  expect(result.current.activeAgentId).toEqual(
+    result.current.agents[0].context.id,
+  )
 })
 
 test('should be able to update agent config', () => {
@@ -160,7 +192,14 @@ test('should be able to update agent config', () => {
     }),
   )
 
-  expect(result.current.agents).toHaveLength(2)
+  act(() => {
+    const agent = createAgent<IAgent, IContext>({
+      context: { id: 'lorem' },
+    })
+    result.current.addAgent(agent)
+  })
+
+  expect(result.current.agents).toHaveLength(3)
   const secondAgentId = result.current.agents[1].context.id as string
 
   act(() => {
@@ -169,6 +208,7 @@ test('should be able to update agent config', () => {
 
     result.current.updateAgentConfig(secondAgentId, config)
   })
+  expect(result.current.agents).toHaveLength(3)
 
   expect(result.current.agents[1].context.name).toEqual('baz')
 })
@@ -202,5 +242,59 @@ test('should be able to set active agent', () => {
   expect(result.current.agent?.context.name).toEqual('bar')
 })
 
-test.todo('should be able to add local agent')
-test.todo('addAgent should throw error if context.id is missing')
+test('addAgent should throw error if context.id is missing', () => {
+  const { result } = renderHook(() => useVeramo(), { wrapper })
+
+  try {
+    act(() => result.current.addAgent(createAgent({})))
+  } catch (e) {
+    expect(e).toEqual(Error('Missing context.id'))
+  }
+})
+
+test('should be possible to pass initial values as props', () => {
+  const localAgent1 = createAgent<IAgent, IContext>({
+    context: {
+      id: 'foo',
+    },
+  })
+
+  const localAgent2 = createAgent<IAgent, IContext>({
+    context: {
+      id: 'bar',
+    },
+  })
+
+  const wrapper = (props: any) => (
+    <VeramoProvider<IAgent, IContext> agents={[localAgent1, localAgent2]}>
+      {props.children}
+    </VeramoProvider>
+  )
+
+  const { result } = renderHook(() => useVeramo(), { wrapper })
+  expect(result.current.agents).toHaveLength(2)
+
+  act(() =>
+    result.current.addAgentConfig({
+      context: {
+        name: 'foo',
+      },
+      remoteAgents: [],
+    }),
+  )
+
+  act(() => {
+    const agent = createAgent<IAgent, IContext>({
+      context: { id: 'baz123' },
+    })
+    result.current.addAgent(agent)
+  })
+
+  expect(result.current.agents).toHaveLength(4)
+
+  act(() => {
+    result.current.removeAgent(result.current.activeAgentId as string)
+  })
+  expect(result.current.agents).toHaveLength(3)
+  expect(result.current.activeAgentId).toEqual('bar')
+})

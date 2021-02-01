@@ -8,8 +8,6 @@
   },
   "license": "Apache-2.0",
   "peerDependencies": {
-    "@veramo/core": "^1.1.1-next.1",
-    "@veramo/remote-client": "^1.1.1-next.1",
     "react": "^16.8.0 || ^17.0.0"
   },
   "devDependencies": {
@@ -23,11 +21,14 @@
     "@types/react": "^17.0.0",
     "@types/react-test-renderer": "^17.0.0",
     "@types/uuid": "^8.3.0",
-    "@veramo/core": "^1.1.1-next.1",
-    "@veramo/credential-w3c": "^1.1.0",
-    "@veramo/data-store": "^1.1.0",
-    "@veramo/did-comm": "^1.1.0",
-    "@veramo/remote-client": "^1.1.1-next.1",
+    "@veramo/core": "^1.1.1-next.3",
+    "@veramo/credential-w3c": "^1.1.1-next.3",
+    "@veramo/data-store": "^1.1.1-next.3",
+    "@veramo/did-comm": "^1.1.1-next.3",
+    "@veramo/did-resolver": "^1.1.1-next.3",
+    "@veramo/message-handler": "^1.1.1-next.3",
+    "@veramo/remote-client": "^1.1.1-next.3",
+    "@veramo/selective-disclosure": "^1.1.1-next.3",
     "babel-jest": "^26.6.3",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
@@ -42,7 +43,8 @@
     "build": "tsc",
     "build:watch": "tsc -b --watch",
     "test": "jest --config=jest.json --coverage=false",
-    "test:watch": "yarn test --watch --verbose"
+    "test:watch": "yarn test --watch --verbose",
+    "upgrade-veramo": "yarn add @veramo/core@next @veramo/remote-client@next; yarn add -D @veramo/credential-w3c@next @veramo/data-store@next  @veramo/selective-disclosure@next @veramo/did-comm@next @veramo/message-handler@next @veramo/did-resolver@next"
   },
   "prettier": {
     "jsxBracketSameLine": false,
@@ -79,5 +81,12 @@
   "dependencies": {
     "ts-jest": "^26.4.4",
     "uuid": "^8.3.2"
-  }
+  },
+  "author": "Simonas Karuzas <simonas.karuzas@mesh.xyz>",
+  "contributors": [
+    {
+      "name": "Jason Healy",
+      "email": "jason.healy@mesh.xyz"
+    }
+  ]
 }

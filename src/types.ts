@@ -4,10 +4,12 @@ import {
   IKeyManager,
   IResolver,
   IMessageHandler,
+  IAgentPluginSchema,
 } from '@veramo/core'
 import { ICredentialIssuer } from '@veramo/credential-w3c'
 import { IDIDComm } from '@veramo/did-comm'
 import { IDataStoreORM } from '@veramo/data-store'
+import { ISelectiveDisclosure } from '@veramo/selective-disclosure'
 
 export type IAgent = IDataStore &
   IDataStoreORM &
@@ -16,7 +18,8 @@ export type IAgent = IDataStore &
   IDIDComm &
   IKeyManager &
   IResolver &
-  IMessageHandler
+  IMessageHandler &
+  ISelectiveDisclosure
 
 export interface IContext extends Record<string, any> {
   id?: string
@@ -30,5 +33,6 @@ export interface ISerializedAgentConfig {
     url: string
     token?: string
     enabledMethods: Array<string>
+    schema?: IAgentPluginSchema
   }>
 }
