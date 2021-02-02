@@ -19,6 +19,7 @@ export function createAgentFromConfig(
           ? { Authorization: 'Bearer ' + remote.token }
           : undefined,
         enabledMethods: remote.enabledMethods,
+        schema: remote.schema,
       }),
   )
 
@@ -43,5 +44,6 @@ export function storeActiveAgentId(id?: string) {
 }
 
 export function getStoredActiveAgentId() {
-  return localStorage.getItem('activeAgentId')
+  const storedId = localStorage.getItem('activeAgentId')
+  return (storedId === null || 'undefined') ? undefined : JSON.parse(storedId)
 }
