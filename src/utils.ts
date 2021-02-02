@@ -1,9 +1,17 @@
-import { createAgent, IPluginMethodMap, TAgent } from '@veramo/core'
+import {
+  createAgent,
+  IAgentPlugin,
+  IPluginMethodMap,
+  TAgent,
+} from '@veramo/core'
 import { AgentRestClient } from '@veramo/remote-client'
 import { ISerializedAgentConfig, IContext } from './types'
 
-export function createAgentFromConfig(config: ISerializedAgentConfig): any {
-  const plugins = config.remoteAgents.map(
+export function createAgentFromConfig(
+  config: ISerializedAgentConfig,
+  plugins?: IAgentPlugin[],
+): any {
+  const restClients: IAgentPlugin[] = config.remoteAgents.map(
     (remote) =>
       new AgentRestClient({
         url: remote.url,
@@ -11,12 +19,13 @@ export function createAgentFromConfig(config: ISerializedAgentConfig): any {
           ? { Authorization: 'Bearer ' + remote.token }
           : undefined,
         enabledMethods: remote.enabledMethods,
+        schema: remote.schema,
       }),
   )
 
   return createAgent({
     context: config.context,
-    plugins,
+    plugins: restClients.concat(plugins || []),
   })
 }
 
@@ -28,4 +37,13 @@ export function getStoredAgentConfigs() {
 
 export function storeAgentConfigs(configs: ISerializedAgentConfig[]) {
   return localStorage.setItem('serializedAgentConfigs', JSON.stringify(configs))
+}
+
+export function storeActiveAgentId(id?: string) {
+  return localStorage.setItem('activeAgentId', JSON.stringify(id))
+}
+
+export function getStoredActiveAgentId() {
+  const storedId = localStorage.getItem('activeAgentId')
+  return (storedId === null || 'undefined') ? undefined : JSON.parse(storedId)
 }
