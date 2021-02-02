@@ -20,22 +20,22 @@ export function VeramoProvider<
   agents?: Array<TAgent<T> & { context?: C }>
   plugins?: IAgentPlugin[]
 }) {
-  const [agents, setAgents] = useState<Array<TAgent<T> & { context?: C }>>(
-    (props.agents || []).concat(
-      getStoredAgentConfigs().map((c) =>
-        createAgentFromConfig(c, props.plugins),
-      ),
+
+  const initialAgents = (props.agents || []).concat(
+    getStoredAgentConfigs().map((c) =>
+      createAgentFromConfig(c, props.plugins),
     ),
   )
-  console.log(getStoredActiveAgentId())
+  const [agents, setAgents] = useState<Array<TAgent<T> & { context?: C }>>(
+   initialAgents 
+  )
   const [activeAgentId, setActiveAgentIdInState] = useState<string | undefined>(
     getStoredActiveAgentId()
       ? getStoredActiveAgentId()
-      : props.agents && props.agents.length > 0
-      ? props.agents[0].context?.id
+      : initialAgents && initialAgents.length > 0
+      ? initialAgents[0].context?.id
       : undefined,
   )
-  console.log(activeAgentId)
 
   const setActiveAgentId = (id?: string) => {
     storeActiveAgentId(id)
