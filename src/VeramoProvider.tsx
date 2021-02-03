@@ -48,8 +48,7 @@ export function VeramoProvider<
 
   const addAgent = (agent: TAgent<T> & { context: C }): void => {
     validateContext(agent.context)
-    const all = [...agents, agent]
-    setAgents(all)
+    setAgents([...agents, agent])
     if (!activeAgentId) {
       setActiveAgentId(agent.context.id)
     }
