@@ -42,14 +42,6 @@ export function VeramoProvider<
     setActiveAgentIdInState(id)
   }
 
-  useEffect(() => {
-    if (!activeAgentId && agents.length > 0) {
-      setActiveAgentId(agents[0].context?.id)
-    } else if (agents.length === 0 && activeAgentId !== undefined) {
-      setActiveAgentId(undefined)
-    }
-  }, [agents, activeAgentId])
-
   const validateContext = (context: IContext): void => {
     if (!context?.id) throw Error('Missing context.id')
   }
@@ -57,6 +49,9 @@ export function VeramoProvider<
   const addAgent = (agent: TAgent<T> & { context: C }): void => {
     validateContext(agent.context)
     setAgents([...agents, agent])
+    if (!activeAgentId) {
+      setActiveAgentId(agent.context.id)
+    }
   }
 
   function addAgentConfig(config: ISerializedAgentConfig) {
@@ -69,15 +64,16 @@ export function VeramoProvider<
   }
 
   const removeAgent = (id: string) => {
-    if (activeAgentId === id) {
-      setActiveAgentId(undefined)
-    }
 
     storeAgentConfigs(
       getStoredAgentConfigs().filter((c) => c.context.id !== id),
     )
 
-    setAgents(agents.filter((a) => a.context?.id !== id))
+    const filtered = agents.filter((a) => a.context?.id !== id)
+    setAgents(filtered)
+    if (activeAgentId === id) {
+      setActiveAgentId(filtered[0]?.context?.id)
+    }
   }
 
   const getAgentConfig = (id: string): ISerializedAgentConfig => {
