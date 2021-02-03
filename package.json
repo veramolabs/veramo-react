@@ -1,6 +1,6 @@
 {
   "name": "@veramo-community/veramo-react",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "publishConfig": {
@@ -11,6 +11,8 @@
     "react": "^16.8.0 || ^17.0.0"
   },
   "dependencies": {
+    "@veramo/core": "^1.1.1-next.4",
+    "@veramo/remote-client": "^1.1.1-next.4",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
@@ -24,23 +26,21 @@
     "@types/react": "^17.0.0",
     "@types/react-test-renderer": "^17.0.0",
     "@types/uuid": "^8.3.0",
-    "@veramo/core": "^1.1.1-next.3",
-    "@veramo/credential-w3c": "^1.1.1-next.3",
-    "@veramo/data-store": "^1.1.1-next.3",
-    "@veramo/did-comm": "^1.1.1-next.3",
-    "@veramo/did-resolver": "^1.1.1-next.3",
-    "@veramo/message-handler": "^1.1.1-next.3",
-    "@veramo/remote-client": "^1.1.1-next.3",
-    "@veramo/selective-disclosure": "^1.1.1-next.3",
+    "@veramo/credential-w3c": "^1.1.1-next.4",
+    "@veramo/data-store": "^1.1.1-next.4",
+    "@veramo/did-comm": "^1.1.1-next.4",
+    "@veramo/did-resolver": "^1.1.1-next.4",
+    "@veramo/message-handler": "^1.1.1-next.4",
+    "@veramo/selective-disclosure": "^1.1.1-next.4",
     "babel-jest": "^26.6.3",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
-    "ts-jest": "^26.4.4",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "17.0.1",
     "react-test-renderer": "^17.0.1",
+    "ts-jest": "^26.4.4",
     "typescript": "^4.0.3"
   },
   "scripts": {
