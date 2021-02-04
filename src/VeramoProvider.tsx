@@ -20,14 +20,11 @@ export function VeramoProvider<
   agents?: Array<TAgent<T> & { context?: C }>
   plugins?: IAgentPlugin[]
 }) {
-
   const initialAgents = (props.agents || []).concat(
-    getStoredAgentConfigs().map((c) =>
-      createAgentFromConfig(c, props.plugins),
-    ),
+    getStoredAgentConfigs().map((c) => createAgentFromConfig(c, props.plugins)),
   )
   const [agents, setAgents] = useState<Array<TAgent<T> & { context?: C }>>(
-   initialAgents 
+    initialAgents,
   )
   const [activeAgentId, setActiveAgentIdInState] = useState<string | undefined>(
     getStoredActiveAgentId()
@@ -64,7 +61,6 @@ export function VeramoProvider<
   }
 
   const removeAgent = (id: string) => {
-
     storeAgentConfigs(
       getStoredAgentConfigs().filter((c) => c.context.id !== id),
     )
@@ -84,7 +80,7 @@ export function VeramoProvider<
   }
 
   function getAgent<T>(id: string): T {
-    const agent = agents.filter((a) => a.context?.id !== id)
+    const agent = agents.find((a) => a.context?.id === id)
     if (!agent) throw Error('Agent not found')
     return (agent as any) as T
   }
