@@ -45,5 +45,7 @@ export function storeActiveAgentId(id?: string) {
 
 export function getStoredActiveAgentId() {
   const storedId = localStorage.getItem('activeAgentId')
-  return (storedId === null || 'undefined') ? undefined : JSON.parse(storedId)
+  return storedId === null || storedId === 'undefined'
+    ? undefined
+    : JSON.parse(storedId)
 }

@@ -23,16 +23,22 @@ export function VeramoProvider<
   const initialAgents = (props.agents || []).concat(
     getStoredAgentConfigs().map((c) => createAgentFromConfig(c, props.plugins)),
   )
+
+  const initialActiveAgentId =
+    getStoredActiveAgentId() ||
+    (initialAgents.length > 0 ? initialAgents[0].context?.id : undefined)
+
   const [agents, setAgents] = useState<Array<TAgent<T> & { context?: C }>>(
     initialAgents,
   )
   const [activeAgentId, setActiveAgentIdInState] = useState<string | undefined>(
-    getStoredActiveAgentId()
-      ? getStoredActiveAgentId()
-      : initialAgents && initialAgents.length > 0
-      ? initialAgents[0].context?.id
-      : undefined,
+    initialActiveAgentId,
   )
+
+  useEffect(() => {
+    setAgents(initialAgents)
+    setActiveAgentId(initialActiveAgentId)
+  }, [props])
 
   const setActiveAgentId = (id?: string) => {
     storeActiveAgentId(id)
