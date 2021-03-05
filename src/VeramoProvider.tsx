@@ -86,7 +86,7 @@ export function VeramoProvider<
   }
 
   function getAgent<T>(id: string): T {
-    const agent = agents.filter((a) => a.context?.id !== id)
+    const agent = agents.find((a) => a.context?.id === id)
     if (!agent) throw Error('Agent not found')
     return (agent as any) as T
   }

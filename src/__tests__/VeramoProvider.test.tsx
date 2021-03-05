@@ -298,3 +298,39 @@ test('should be possible to pass initial values as props', () => {
   expect(result.current.agents).toHaveLength(3)
   expect(result.current.activeAgentId).toEqual('bar')
 })
+
+test('should return correct agent by id', () => {
+  const { result } = renderHook(() => useVeramo(), { wrapper })
+
+  act(() => {
+    const agent = createAgent<IAgent, IContext>({
+      context: { id: 'baz' },
+    })
+    result.current.addAgent(agent)
+  })
+
+  act(() =>
+    result.current.addAgentConfig({
+      context: {
+        name: 'foo',
+        id: 'foo',
+      },
+      remoteAgents: [],
+    }),
+  )
+
+  act(() =>
+    result.current.addAgentConfig({
+      context: {
+        name: 'bar',
+        id: 'bar',
+      },
+      remoteAgents: [],
+    }),
+  )
+
+  act(() => {
+    const agent = result.current.getAgent('bar')
+    expect(agent.context.id).toEqual('bar')
+  })
+})
