@@ -20,6 +20,10 @@
     "@babel/preset-react": "^7.12.10",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.1.3",
+    "@semantic-release/release-notes-generator": "^9.0.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react-hooks": "^5.0.3",
     "@types/jest": "^26.0.20",
@@ -40,6 +44,7 @@
     "react": "^17.0.1",
     "react-dom": "17.0.1",
     "react-test-renderer": "^17.0.1",
+    "semantic-release": "^17.4.3",
     "ts-jest": "^26.4.4",
     "typescript": "^4.0.3"
   },
@@ -48,7 +53,8 @@
     "build:watch": "tsc -b --watch",
     "test": "jest --config=jest.json --coverage=false",
     "test:watch": "yarn test --watch --verbose",
-    "upgrade-veramo": "yarn add @veramo/core@next @veramo/remote-client@next; yarn add -D @veramo/credential-w3c@next @veramo/data-store@next  @veramo/selective-disclosure@next @veramo/did-comm@next @veramo/message-handler@next @veramo/did-resolver@next"
+    "upgrade-veramo": "yarn add @veramo/core@next @veramo/remote-client@next; yarn add -D @veramo/credential-w3c@next @veramo/data-store@next @veramo/selective-disclosure@next @veramo/did-comm@next @veramo/message-handler@next @veramo/did-resolver@next",
+    "release": "semantic-release"
   },
   "prettier": {
     "jsxBracketSameLine": false,
@@ -63,6 +69,25 @@
       "pre-commit": "pretty-quick --staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "release": {
+    "branch": "main",
+    "ci": true,
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
+          ],
+          "message": "chore(release): :rocket: New version ${nextRelease.version} \n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
   },
   "eslintConfig": {
     "extends": [
