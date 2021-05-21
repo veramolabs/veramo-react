@@ -10,7 +10,7 @@ When you add an agent configuration it is persisted to local storage. A randomly
 
 ## Install and set up
 
-```
+```bash
 yarn add @veramo-community/veramo-react
 ```
 
@@ -39,6 +39,45 @@ export default = () => (
     </VeramoProvider>
   </QueryClientProvider>
 )
+```
+
+## Create local agent
+
+Create an agent in your app and export it. You will need to install additional dependencies
+
+```bash
+yarn add @veramo/did-resolver@next ethr-did-resolver did-resolver web-did-resolver
+```
+
+```tsx
+import { createAgent, IResolver } from '@veramo/core'
+
+import { DIDResolverPlugin } from '@veramo/did-resolver'
+import { Resolver } from 'did-resolver'
+import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
+import { getResolver as webDidResolver } from 'web-did-resolver'
+
+// You will need to get a project ID from infura https://www.infura.io
+const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
+
+export const agent = createAgent<IResolver>({
+  plugins: [
+    new DIDResolverPlugin({
+      resolver: new Resolver({
+        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+        ...webDidResolver(),
+      }),
+    }),
+  ],
+})
+```
+
+In the provider setup above, add the following to bootstrap the local agent. You can also call [addAgent](#addAgent) to add while your application is running.
+
+```tsx
+import {agent} from '../veramo'
+
+<VeramoProvider agent={[agent]}>...<VeramoProvider>
 ```
 
 ## `useVeramo hook`
@@ -93,7 +132,20 @@ Set the current active agent by ID
 
 ### `addAgent`
 
-Add a local agent.
+Add a local agent. Create a local agent as per example in `Create local agent` section.
+
+```tsx
+import { agent } from '../veramo'
+import { useVeramo } from '@veramo-community/veramo-react'
+
+// Inside a function component
+
+const { addAgentConfig } = useVeramo()
+
+const addLocalAgent = () => {
+  addAgent(agent)
+}
+```
 
 ### `removeAgent`
 
@@ -104,6 +156,11 @@ Remove an agent by ID.
 Add a remote agent configuration.
 
 ```tsx
+import { useVeramo } from '@veramo-community/veramo-react'
+
+// Inside a function component
+const { addAgentConfig } = useVeramo()
+
 const newAgentConfig = () => {
   addAgentConfig({
     context: { name: 'Agent Name', schema: schemaUrl },
