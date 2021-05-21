@@ -14,9 +14,11 @@ When you add an agent configuration it is persisted to local storage. A randomly
 yarn add @veramo-community/veramo-react
 ```
 
-Installation includes @veramo/core@next and @veramo/remote-client@next. You will **NOT** need to add additional `@veramo` dependencies to your app if you are just working with remote agents.
+**_NOTE:_** Veramo React depends on `@next` versions of `@veramo`
 
-Here's a simplified extract from Veramo Agent Explorer that uses React Query ontop of Veramo React to manage the data layer including caching and global data syncning.
+Installation includes `@veramo/core@next` and `@veramo/remote-client@next`. You will **NOT** need to add additional `@veramo` dependencies to your app if you are just working with remote agents.
+
+The following sippet is a simplified extract from [Veramo Agent Explorer](https://github.com/veramolabs/agent-explorer) that uses [React Query](https://github.com/tannerlinsley/react-query) ontop of `Veramo React` to manage the data layer including caching and global data syncning.
 
 ```tsx
 import React from 'react'
@@ -37,7 +39,7 @@ export default = () => (
 )
 ```
 
-## `useVeramo`
+## `useVeramo hook`
 
 The primary hook that provides the following API to your app. The below syntax uses React Query to fetch the data and uses the cache key of `credentials + agentID` to identify the data to your app.
 
@@ -63,7 +65,7 @@ export default = () => {
 }
 ```
 
-If you are not using React Query you would just call `agent?.dataStoreORMGetVerifiableCredentials()` and manage the data like any async data source.
+If you are not using React Query you can just call `agent?.dataStoreORMGetVerifiableCredentials()` and manage the data like any async data source.
 
 ## API
 
