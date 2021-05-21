@@ -28,6 +28,8 @@ import { QueryClientProvider, QueryClient } from 'react-query'
 import { PageModuleProvider } from '../context/WidgetProvider'
 import App from '../App'
 
+const queryClient = new QueryClient()
+
 export default = () => (
   <QueryClientProvider client={queryClient}>
     <VeramoProvider>
