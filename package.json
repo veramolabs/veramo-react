@@ -53,7 +53,8 @@
     "build:watch": "tsc -b --watch",
     "test": "jest --config=jest.json --coverage=false",
     "test:watch": "yarn test --watch --verbose",
-    "upgrade-veramo": "yarn add @veramo/core@next @veramo/remote-client@next; yarn add -D @veramo/credential-w3c@next @veramo/data-store@next  @veramo/selective-disclosure@next @veramo/did-comm@next @veramo/message-handler@next @veramo/did-resolver@next"
+    "upgrade-veramo": "yarn add @veramo/core@next @veramo/remote-client@next; yarn add -D @veramo/credential-w3c@next @veramo/data-store@next @veramo/selective-disclosure@next @veramo/did-comm@next @veramo/message-handler@next @veramo/did-resolver@next",
+    "release": "semantic-release"
   },
   "prettier": {
     "jsxBracketSameLine": false,
