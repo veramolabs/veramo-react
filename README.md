@@ -4,11 +4,17 @@ Veramo React makes it easy to interact with multiple agents in React Application
 
 ## Motivation
 
-When using veramo in your front end React apps you may need to manage the state of multiple remote and local agents. Vertamo React makes it easy to manage all of your agents without needing to write or maintain boilerplate code. It also enables making new features available to front-end stacks without developers needing to implement them manually.
+When using veramo in your front end React apps you may need to manage the state of multiple remote and local agents. Veramo React makes it easy to manage agents without needing to write or maintain boilerplate code. It also enables making new features available to front-end stacks without developers needing to implement them manually.
 
 When you add an agent configuration it is persisted to local storage. A randomly generated ID is assigned to each agent.
 
 ## Install and set up
+
+```
+yarn add @veramo-community/veramo-react
+```
+
+Installation includes @veramo/core@next and @veramo/remote-client@next. You will **NOT** need to add additional `@veramo` dependencies to your app if you are just working with remote agents.
 
 Here's a simplified extract from Veramo Agent Explorer that uses React Query ontop of Veramo React to manage the data layer including caching and global data syncning.
 
@@ -31,7 +37,7 @@ export default = () => (
 )
 ```
 
-### `useVeramo`
+## `useVeramo`
 
 The primary hook that provides the following API to your app. The below syntax uses React Query to fetch the data and uses the cache key of `credentials + agentID` to identify the data to your app.
 
