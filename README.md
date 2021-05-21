@@ -18,7 +18,7 @@ yarn add @veramo-community/veramo-react
 
 Installation includes `@veramo/core@next` and `@veramo/remote-client@next`. You will **NOT** need to add additional `@veramo` dependencies to your app if you are just working with remote agents.
 
-The following sippet is a simplified extract from [Veramo Agent Explorer](https://github.com/veramolabs/agent-explorer) that uses [React Query](https://github.com/tannerlinsley/react-query) ontop of `Veramo React` to manage the data layer including caching and global data syncning.
+The following sippet is a simplified extract from [Veramo Agent Explorer](https://github.com/veramolabs/agent-explorer) that uses [React Query](https://github.com/tannerlinsley/react-query) ontop of `Veramo React` to manage the data layer including caching and global data syncing.
 
 ```tsx
 import React from 'react'
@@ -100,6 +100,21 @@ Remove an agent by ID.
 ### `addAgentConfig`
 
 Add a remote agent configuration.
+
+```tsx
+const newAgentConfig = () => {
+  addAgentConfig({
+    context: { name: 'Agent Name', schema: schemaUrl },
+    remoteAgents: [
+      {
+        url: agentUrl,
+        enabledMethods: Object.keys(schema['x-methods']),
+        token: apiKey,
+      },
+    ],
+  })
+}
+```
 
 ### `updateAgentConfig`
 
