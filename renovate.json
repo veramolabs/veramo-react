@@ -7,7 +7,6 @@
     {
       "packagePatterns": ["veramo"],
       "groupName": "veramo-next-dependencies",
-      "matchBaseBranches": ["next"],
       "respectLatest": false,
       "followTag": "next"
     },
