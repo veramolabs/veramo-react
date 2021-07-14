@@ -1,9 +1,4 @@
-import {
-  createAgent,
-  IAgentPlugin,
-  IPluginMethodMap,
-  TAgent,
-} from '@veramo/core'
+import { createAgent, IAgentPlugin } from '@veramo/core'
 import { AgentRestClient } from '@veramo/remote-client'
 import { ISerializedAgentConfig, IContext } from './types'
 
