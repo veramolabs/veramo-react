@@ -1727,7 +1727,7 @@
     "@stablelib/wipe" "^1.0.0"
     "@stablelib/xchacha20" "^1.0.0"
 
-"@testing-library/jest-dom@^5.11.9":
+"@testing-library/jest-dom@5.11.9":
   version "5.11.9"
   resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.11.9.tgz#e6b3cd687021f89f261bd53cbe367041fbd3e975"
   integrity sha512-Mn2gnA9d1wStlAIT2NU8J15LNob0YFBVjs2aEQ3j8rsfRQo+lAs7/ui1i2TGaJjapLmuNPLTsrm+nPjmZDwpcQ==
@@ -1741,7 +1741,7 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react-hooks@^5.0.3":
+"@testing-library/react-hooks@5.0.3":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-5.0.3.tgz#dd0d2048817b013b266d35ca45e3ea48a19fd87e"
   integrity sha512-UrnnRc5II7LMH14xsYNm/WRch/67cBafmrSQcyFh0v+UUmSf1uzfB7zn5jQXSettGwOSxJwdQUN7PgkT0w22Lg==
@@ -1817,7 +1817,7 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@*", "@types/jest@26.x", "@types/jest@^26.0.20":
+"@types/jest@*", "@types/jest@26.0.20", "@types/jest@26.x":
   version "26.0.20"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.20.tgz#cd2f2702ecf69e86b586e1f5223a60e454056307"
   integrity sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
@@ -1867,14 +1867,14 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-test-renderer@>=16.9.0", "@types/react-test-renderer@^17.0.0":
+"@types/react-test-renderer@17.0.0", "@types/react-test-renderer@>=16.9.0":
   version "17.0.0"
   resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-17.0.0.tgz#9be47b375eeb906fced37049e67284a438d56620"
   integrity sha512-nvw+F81OmyzpyIE1S0xWpLonLUZCMewslPuA8BtjSKc5XEbn8zEQBXS7KuOLHTNnSOEM2Pum50gHOoZ62tqTRg==
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@>=16.9.0", "@types/react@^17.0.0":
+"@types/react@*", "@types/react@17.0.0", "@types/react@>=16.9.0":
   version "17.0.0"
   resolved "https://registry.npmjs.org/@types/react/-/react-17.0.0.tgz#5af3eb7fad2807092f0046a1302b7823e27919b8"
   integrity sha512-aj/L7RIMsRlWML3YB6KZiXB3fV2t41+5RBGYF8z+tAKU43Px8C3cYUZsDvf1/+Bm4FK21QWBrDutu8ZJ/70qOw==
@@ -1899,7 +1899,7 @@
   dependencies:
     "@types/jest" "*"
 
-"@types/uuid@^8.3.0":
+"@types/uuid@8.3.0":
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.0.tgz#215c231dff736d5ba92410e6d602050cce7e273f"
   integrity sha512-eQ9qFW/fhfGJF8WKHGEHZEyVWfZxrT+6CLIJGBcZPfxUh/+BnEj+UCGYMlr9qZuX/2AltsvwrGqp0LhEW8D0zQ==
@@ -1931,7 +1931,7 @@
     events "^3.2.0"
     z-schema "^5.0.0"
 
-"@veramo/credential-w3c@^1.2.3-next.12", "@veramo/credential-w3c@^1.2.3-next.12+3a488f79":
+"@veramo/credential-w3c@1.2.3-next.12", "@veramo/credential-w3c@^1.2.3-next.12+3a488f79":
   version "1.2.3-next.12"
   resolved "https://registry.yarnpkg.com/@veramo/credential-w3c/-/credential-w3c-1.2.3-next.12.tgz#44cd9c42efc7ed80d53a8efc88a8c43768ce3a1a"
   integrity sha512-JV8mWni6cYgAdqxQuYjAsvitkbPfm1JKsNcisSPJrLm04ju7EcoSjsY1e0dreNGR8YUQ0uzBhGhd2HGGZdjj+g==
@@ -1945,7 +1945,7 @@
     did-jwt-vc "2.1.1"
     did-resolver "3.1.0"
 
-"@veramo/data-store@^1.2.3-next.12", "@veramo/data-store@^1.2.3-next.12+3a488f79":
+"@veramo/data-store@1.2.3-next.12", "@veramo/data-store@^1.2.3-next.12+3a488f79":
   version "1.2.3-next.12"
   resolved "https://registry.yarnpkg.com/@veramo/data-store/-/data-store-1.2.3-next.12.tgz#2c199aa2a97d6bdd4134ffba34fd62279031bee5"
   integrity sha512-sH4eaO1pbRQxlXPni2U6znPJtA6BFSrk7dO9wOSNZXCuGjey0hoIsKyWoGJcXJiuDMG6Yv5xvFszeigxVQAe4A==
@@ -1956,7 +1956,7 @@
     debug "^4.1.1"
     typeorm "0.2.32"
 
-"@veramo/did-comm@^1.2.3-next.12":
+"@veramo/did-comm@1.2.3-next.12":
   version "1.2.3-next.12"
   resolved "https://registry.yarnpkg.com/@veramo/did-comm/-/did-comm-1.2.3-next.12.tgz#0ad6791a4afb874c38a1115b7c809dfff1c6dca0"
   integrity sha512-ToX1bKbw3Lg8ArZr1I6uysNzLHo0S105Wi8gjc7cMERezNIetJlUDCjx83FYOmGXJCCUw+0MtremNLpdu6EEfg==
@@ -1985,7 +1985,7 @@
   dependencies:
     "@veramo/core" "^1.2.3-next.12+3a488f79"
 
-"@veramo/did-resolver@^1.2.3-next.12", "@veramo/did-resolver@^1.2.3-next.12+3a488f79":
+"@veramo/did-resolver@1.2.3-next.12", "@veramo/did-resolver@^1.2.3-next.12+3a488f79":
   version "1.2.3-next.12"
   resolved "https://registry.yarnpkg.com/@veramo/did-resolver/-/did-resolver-1.2.3-next.12.tgz#ddc29f145630372d249254683ecbc6200f6b2ec9"
   integrity sha512-kHftM+OHY6eJJU8bVpFrGLG0/xiFCjpsSJc9S5pFwr+adt4Tw4l1a31ToOenq7i9HV9W4yKYjYtdQBHSjQSMHA==
@@ -2001,7 +2001,7 @@
   dependencies:
     "@veramo/core" "^1.2.3-next.12+3a488f79"
 
-"@veramo/message-handler@^1.2.3-next.12", "@veramo/message-handler@^1.2.3-next.12+3a488f79":
+"@veramo/message-handler@1.2.3-next.12", "@veramo/message-handler@^1.2.3-next.12+3a488f79":
   version "1.2.3-next.12"
   resolved "https://registry.yarnpkg.com/@veramo/message-handler/-/message-handler-1.2.3-next.12.tgz#b37a7fe635c48f9669c17593fe7a4046d40fdb9b"
   integrity sha512-EjyBk/UQPIwF7eJATWtCli9L+r5FSTqkd/490U1nVHIwdfpnRMCp22RIu9hOpwuFw5g4cTrcfElxIlO47MRoHQ==
@@ -2018,7 +2018,7 @@
     debug "^4.1.1"
     openapi-types "^8.0.0"
 
-"@veramo/selective-disclosure@^1.2.3-next.12":
+"@veramo/selective-disclosure@1.2.3-next.12":
   version "1.2.3-next.12"
   resolved "https://registry.yarnpkg.com/@veramo/selective-disclosure/-/selective-disclosure-1.2.3-next.12.tgz#3b4789dc79dff0fa31ca775f9b1be31e17990784"
   integrity sha512-W3nY6a703AgegVhQom/94ubcJu8M8QVq/qefATSHUigqq0orKzzgYArY5qFwsm8tPFY1n0EER23ES2+xRGT8OQ==
@@ -4128,9 +4128,9 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^4.3.8:
+husky@4.3.8:
   version "4.3.8"
-  resolved "https://registry.npmjs.org/husky/-/husky-4.3.8.tgz#31144060be963fd6850e5cc8f019a1dfe194296d"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.8.tgz#31144060be963fd6850e5cc8f019a1dfe194296d"
   integrity sha512-LCqqsB0PzJQ/AlCgfrfzRe3e3+NvmefAdKQhRYpxS4u6clblBoDdzzvHi8fmxKRzvMxPY/1WZWzomPZww0Anow==
   dependencies:
     chalk "^4.0.0"
@@ -6432,9 +6432,9 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier@^2.2.1:
+prettier@2.2.1:
   version "2.2.1"
-  resolved "https://registry.npmjs.org/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
   integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
 
 pretty-format@^26.0.0, pretty-format@^26.6.2:
@@ -6447,9 +6447,9 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-pretty-quick@^3.1.0:
+pretty-quick@3.1.0:
   version "3.1.0"
-  resolved "https://registry.npmjs.org/pretty-quick/-/pretty-quick-3.1.0.tgz#cb172e9086deb57455dea7c7e8f136cd0a4aef6c"
+  resolved "https://registry.yarnpkg.com/pretty-quick/-/pretty-quick-3.1.0.tgz#cb172e9086deb57455dea7c7e8f136cd0a4aef6c"
   integrity sha512-DtxIxksaUWCgPFN7E1ZZk4+Aav3CCuRdhrDSFZENb404sYMtuo9Zka823F+Mgeyt8Zt3bUiCjFzzWYE9LYqkmQ==
   dependencies:
     chalk "^3.0.0"
@@ -7686,7 +7686,7 @@ trim-off-newlines@^1.0.0:
   resolved "https://registry.npmjs.org/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
   integrity sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
 
-ts-jest@^26.4.4:
+ts-jest@26.4.4:
   version "26.4.4"
   resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.4.4.tgz#61f13fb21ab400853c532270e52cc0ed7e502c49"
   integrity sha512-3lFWKbLxJm34QxyVNNCgXX1u4o/RV0myvA2y2Bxm46iGIjKlaY0own9gIckbjZJPn+WaJEnfPPJ20HHGpoq4yg==
@@ -7792,7 +7792,7 @@ typeorm@0.2.32:
     yargs "^16.2.0"
     zen-observable-ts "^1.0.0"
 
-typescript@^4.0.3:
+typescript@4.1.3:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"
   integrity sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
