@@ -11,12 +11,12 @@
     "react": "^16.8.0 || ^17.0.0"
   },
   "dependencies": {
-    "@veramo/core": "2.1.2-next.14",
-    "@veramo/credential-w3c": "2.1.2-next.14",
-    "@veramo/data-store": "2.1.2-next.14",
-    "@veramo/did-comm": "2.1.2-next.14",
-    "@veramo/remote-client": "2.1.2-next.14",
-    "@veramo/selective-disclosure": "2.1.2-next.14",
+    "@veramo/core": "2.1.2-next.15",
+    "@veramo/credential-w3c": "2.1.2-next.15",
+    "@veramo/data-store": "2.1.2-next.15",
+    "@veramo/did-comm": "2.1.2-next.15",
+    "@veramo/remote-client": "2.1.2-next.15",
+    "@veramo/selective-disclosure": "2.1.2-next.15",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
