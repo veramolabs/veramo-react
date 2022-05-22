@@ -2157,27 +2157,27 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.3.tgz#781d360c282436494b32fe7d9f7f8e64b3118aa3"
   integrity sha512-fbF6oTd4sGGy0xjHPKAt+eS2CrxJ3+6gQ3FGcBoIJR2TLAyCkCyI8JqZNy+FeON0AhVgNJoUumVoZQjBFUqHkw==
 
-"@veramo/core@3.1.2-next.95", "@veramo/core@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/core/-/core-3.1.2-next.95.tgz#b723f32a42e2d083c03e4a7d843689ea00bfdaf9"
-  integrity sha512-K6TE/PUW8VemBLgL7rUs/XSPVzqZjW0DUPqkXDjeW7frIvBv5HJSX7EDgQGjeZt4Zlu0oo0n3wyRpNwZOhEEcQ==
+"@veramo/core@3.1.2-next.98", "@veramo/core@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/core/-/core-3.1.2-next.98.tgz#9838854187793d78261015647188ef0d4059557f"
+  integrity sha512-wMOyoVhNbfPyakQ8lwfnUoqTx1F0XNewLYK1dL/X4w8FEtbhwiEnQ4x7eKjiY1UadEmFUvvHu2rLDfgnUlCi9A==
   dependencies:
     debug "^4.3.3"
     did-jwt-vc "^2.1.9"
     events "^3.2.0"
     z-schema "^5.0.2"
 
-"@veramo/credential-ld@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/credential-ld/-/credential-ld-3.1.2-next.95.tgz#61df42090b6f27a829a3c039d1349b4269e83b29"
-  integrity sha512-43iANbAsIp91NQAL8P0TZe4fFjiLfMFEL+p6opEz3QcsRDqCXDjgexv/KBcU2xLbfdpV7VjlAooNkozyAZWGMA==
+"@veramo/credential-ld@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/credential-ld/-/credential-ld-3.1.2-next.98.tgz#c9d0d370f86fa454b33624c6ee0c3984ab3314f3"
+  integrity sha512-hw2ix/1CWIXW1ZtKxaBQHxUA5gmg/oGfzO57V4zecdj4FsSda5bG0PVwxIhdKx2fXs7X7WIiu0oSfF323t4sBQ==
   dependencies:
     "@transmute/credentials-context" "^0.7.0-unstable.34"
     "@transmute/ed25519-signature-2018" "^0.7.0-unstable.34"
     "@transmute/lds-ecdsa-secp256k1-recovery2020" "^0.0.7"
-    "@veramo/core" "^3.1.2-next.95+2374c712"
-    "@veramo/did-resolver" "^3.1.2-next.95+2374c712"
-    "@veramo/utils" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
+    "@veramo/did-resolver" "^3.1.2-next.98+5150b0ec"
+    "@veramo/utils" "^3.1.2-next.98+5150b0ec"
     debug "^4.3.3"
     did-resolver "^3.1.5"
     jsonld "^5.2.0"
@@ -2185,47 +2185,47 @@
     uint8arrays "^3.0.0"
     vc-js "^0.6.4"
 
-"@veramo/credential-w3c@3.1.2-next.95", "@veramo/credential-w3c@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/credential-w3c/-/credential-w3c-3.1.2-next.95.tgz#04fe8451bdd09c253a4072bbd1bf704b14901cd5"
-  integrity sha512-DNEBeeUU2PYp9gBjmFl2rfRrwX92aUkC98OPLCEhct/Yo1k4Hj66/ZPiSq3C4c8HVzVrhQpna/fIdW8hOofjRg==
+"@veramo/credential-w3c@3.1.2-next.98", "@veramo/credential-w3c@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/credential-w3c/-/credential-w3c-3.1.2-next.98.tgz#df45c959f0caf8d2d89bd138a1d59a29ded14eca"
+  integrity sha512-9k7DzwgnZ0ZWyZCFR0orhd/WNB8g56E5HzcmnsbY3oLRkxBXueuebKbLMzf7cWYpt1P3LiNkDwCLKYORo8Xryw==
   dependencies:
-    "@veramo/core" "^3.1.2-next.95+2374c712"
-    "@veramo/did-jwt" "^3.1.2-next.95+2374c712"
-    "@veramo/did-resolver" "^3.1.2-next.95+2374c712"
-    "@veramo/message-handler" "^3.1.2-next.95+2374c712"
-    "@veramo/utils" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
+    "@veramo/did-jwt" "^3.1.2-next.98+5150b0ec"
+    "@veramo/did-resolver" "^3.1.2-next.98+5150b0ec"
+    "@veramo/message-handler" "^3.1.2-next.98+5150b0ec"
+    "@veramo/utils" "^3.1.2-next.98+5150b0ec"
     debug "^4.3.3"
     did-jwt-vc "^2.1.9"
     did-resolver "^3.1.5"
     uint8arrays "^3.0.0"
     uuid "^8.3.0"
   optionalDependencies:
-    "@veramo/credential-ld" "^3.1.2-next.95+2374c712"
+    "@veramo/credential-ld" "^3.1.2-next.98+5150b0ec"
 
-"@veramo/data-store@3.1.2-next.95":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/data-store/-/data-store-3.1.2-next.95.tgz#a0dbb6208f76ad5a5b6db6239ad1671c264ccc8a"
-  integrity sha512-hOfiGQHo2mcdP+7PsNB0Wr16b7keC50RfFBVhyznccApZa7pwjgnrRaHSVN8sOuR8hQhGSdPawZEdJ0+qXupIQ==
+"@veramo/data-store@3.1.2-next.98":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/data-store/-/data-store-3.1.2-next.98.tgz#d35fa87cef17ce8a08b2c7dd214ab6ea710c362c"
+  integrity sha512-NBlZmuVcgFDtkctN+cTMZmNXtCEkunf2KrvH4B4cUhKdBQfgvfpzYhekt0NZE9cMV4HZHWCOn9Q6EWm8PhFUCg==
   dependencies:
-    "@veramo/core" "^3.1.2-next.95+2374c712"
-    "@veramo/did-discovery" "^3.1.2-next.95+2374c712"
-    "@veramo/did-manager" "^3.1.2-next.95+2374c712"
-    "@veramo/key-manager" "^3.1.2-next.95+2374c712"
-    "@veramo/utils" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
+    "@veramo/did-discovery" "^3.1.2-next.98+5150b0ec"
+    "@veramo/did-manager" "^3.1.2-next.98+5150b0ec"
+    "@veramo/key-manager" "^3.1.2-next.98+5150b0ec"
+    "@veramo/utils" "^3.1.2-next.98+5150b0ec"
     debug "^4.3.3"
     typeorm "0.2.45"
 
-"@veramo/did-comm@3.1.2-next.95":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/did-comm/-/did-comm-3.1.2-next.95.tgz#ba35b5134aa04c5bdd55785882039e939e3bdc99"
-  integrity sha512-s4x4iYs8jOeBSaABzmuJbdRcP5xZaMBZO8/kh2GFr94z0P1foq/nssCc+g5sYZbKn2h14seRirWysT3rZII+qg==
+"@veramo/did-comm@3.1.2-next.98":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/did-comm/-/did-comm-3.1.2-next.98.tgz#85c99f20cbefa10cfa80b99ed186aa581ca1463f"
+  integrity sha512-3nS4zfuBHVxEKssiCDK1H6TWX33NBCXMqHoFW1tAVY3M+c0ZHKBN3rbUcwLh2iJNpCsjDS7MU+t+8ZNhIMaLUg==
   dependencies:
     "@ethersproject/signing-key" "^5.5.0"
     "@stablelib/ed25519" "^1.0.2"
-    "@veramo/core" "^3.1.2-next.95+2374c712"
-    "@veramo/message-handler" "^3.1.2-next.95+2374c712"
-    "@veramo/utils" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
+    "@veramo/message-handler" "^3.1.2-next.98+5150b0ec"
+    "@veramo/utils" "^3.1.2-next.98+5150b0ec"
     cross-fetch "^3.1.4"
     debug "^4.3.3"
     did-jwt "^5.12.3"
@@ -2233,94 +2233,94 @@
     uint8arrays "3.0.0"
     uuid "^8.3.0"
 
-"@veramo/did-discovery@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/did-discovery/-/did-discovery-3.1.2-next.95.tgz#12b5c90e4388509f77fbd0a4173dc90407987ec3"
-  integrity sha512-i422GK7+kPiWUJ3uxhP65/o+9Kg/lSCMtq7gogQZrOMgLaZuFiteVeAy1gcMD/LCTGlAvrBdWwe6nCQ8odarCQ==
+"@veramo/did-discovery@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/did-discovery/-/did-discovery-3.1.2-next.98.tgz#5d2ffecb95c7ea657a7383a1c47188e56d486ddf"
+  integrity sha512-w8RE3mJp8ZEIu/STMpwt3wH/qbXw/nlWBAATNnzDjF/qlrl/xT2iN9O5IdM7N1bmSDwsNuGllWJmmLAqx45EPg==
   dependencies:
-    "@veramo/core" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
     debug "^4.3.3"
 
-"@veramo/did-jwt@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/did-jwt/-/did-jwt-3.1.2-next.95.tgz#6d6ca483ed0ad380e6da2d3ac8e71f91cd1686d5"
-  integrity sha512-eLpW7pZQrwtx9kut3wKGFOG8msPV7sM+SQTqeEWxok6CU9lB2rwRHnvp55PyMCRLpaB6kVyGcSGfSWQbndFQEg==
+"@veramo/did-jwt@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/did-jwt/-/did-jwt-3.1.2-next.98.tgz#95529889df93b35b53077997a5df6fcc15cae876"
+  integrity sha512-kr++ODHHnvzbIbS4sD7bFGo75TqRwsTfOaEm9xF8Mos3fQ/Z4NMIYKkzcV0g5U4R6CkgBLvCN6Z4krzpOQzULA==
   dependencies:
-    "@veramo/core" "^3.1.2-next.95+2374c712"
-    "@veramo/message-handler" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
+    "@veramo/message-handler" "^3.1.2-next.98+5150b0ec"
     debug "^4.3.3"
     did-jwt "^5.12.3"
     did-resolver "^3.1.5"
 
-"@veramo/did-manager@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/did-manager/-/did-manager-3.1.2-next.95.tgz#53cccf438ff081611a903a426e63a5ba8b2044f4"
-  integrity sha512-HcpYfSvFgNYl3G6DBPXCVGz9S+wVM2WdaLVtCR2DhX9/Q6O4zcB4wB56UpCGhVW8Sm91Ccdlv08rKV9TQcDOnw==
+"@veramo/did-manager@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/did-manager/-/did-manager-3.1.2-next.98.tgz#1e18f7ce504873135ab8b47d3494f0cfb308e021"
+  integrity sha512-jcE4+zoTBTwqof/rM3gD7R36pn5JVSbtAsxSXIkjHU1CXPtZS/klMY6ZwW51g5i0b/a/pILXIqbwhD3pTUA5Dg==
   dependencies:
-    "@veramo/core" "^3.1.2-next.95+2374c712"
-    "@veramo/did-discovery" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
+    "@veramo/did-discovery" "^3.1.2-next.98+5150b0ec"
 
-"@veramo/did-resolver@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/did-resolver/-/did-resolver-3.1.2-next.95.tgz#654c5c1949e3d144fedecf8eb08673f4fd05815c"
-  integrity sha512-N1Bm1/dF8bwdvqWMjFbSaFv75yS0SRtcENGIRytnQgUm5KXYoHIwRsWx2+/qPiZqsSOPSKUGHNQCIZxvu5WfEQ==
+"@veramo/did-resolver@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/did-resolver/-/did-resolver-3.1.2-next.98.tgz#9e0c4c272a6b54e7b95ceb88e3a552b8f774219f"
+  integrity sha512-4+S1GE1qtHxIQO+qJ7/Bc+UaaEI3ls/fcypJEQAeJkZ5R3NI71cu3UnTyV52L32NJ9W0SA4ctgle4gtr0wM0dg==
   dependencies:
-    "@veramo/core" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
     cross-fetch "^3.1.4"
     debug "^4.3.3"
 
-"@veramo/key-manager@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/key-manager/-/key-manager-3.1.2-next.95.tgz#14e9aae721cc30197e7982806290986b5581b7f6"
-  integrity sha512-lnIzryPHOcGTy3Wgnn4xHtJrosmbrg+jcaTcuZRQaVGwIeI5cLNh7lnnxPvq/42JGJh5RX4se/ccyv0Sb898gA==
+"@veramo/key-manager@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/key-manager/-/key-manager-3.1.2-next.98.tgz#9d8ae8dc3724f02cc5464fc3c064e946d3b62d1f"
+  integrity sha512-Es0V3u0+//TPg6T//T96FJyiFJtpndv3KeCFdHbie5CIIhpz36L6+evpV1z6/cQLOMfXJzjsABL+6X/4CRFAYA==
   dependencies:
     "@ethersproject/bytes" "5.5.0"
     "@ethersproject/strings" "5.5.0"
     "@ethersproject/transactions" "5.5.0"
     "@stablelib/ed25519" "^1.0.2"
-    "@veramo/core" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
     did-jwt "^5.12.3"
     uint8arrays "3.0.0"
     uuid "^8.3.2"
 
-"@veramo/message-handler@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/message-handler/-/message-handler-3.1.2-next.95.tgz#b8a57e7b61724cb831fb21f9190ae5ca66d451d9"
-  integrity sha512-FG0fGsEF0GVTso7yAvihOZ2eFdKLVXb+PWqqY4H1OBaMMcq4kLiidIE9IGWY672cqTQXtYwbUePcUEzW9tjq/g==
+"@veramo/message-handler@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/message-handler/-/message-handler-3.1.2-next.98.tgz#c14c004705bcde31da83fdf0b3db041b283a8b4a"
+  integrity sha512-M6mglkm4BR3HOtHunpbBW4yFO96FK0TLkE+E1Nl6TZFyW9c5ws+axJ3qfnaTMm13syMpvhjSEORWHETouv6Xxg==
   dependencies:
-    "@veramo/core" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
 
-"@veramo/remote-client@3.1.2-next.95":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/remote-client/-/remote-client-3.1.2-next.95.tgz#8896b22c3c6b1b72ba218ba53e0b0bec257a762c"
-  integrity sha512-UZBVBFiM/3AUAXpN6ex5mQ2M1BcysoSV5NPNUBA7knjfPyYgOUcy1rTTJKJhGovgq38RCRa/GwsmATvR3Ec6/w==
+"@veramo/remote-client@3.1.2-next.98":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/remote-client/-/remote-client-3.1.2-next.98.tgz#f17d0a58668d1711af34c782f26b908c6dfb0249"
+  integrity sha512-zjGnJZyFTNC7H4hRK0EFiFy9UUzCrlGHGIfcfuBKKtzcYEa/FhZId3Klb9pXzHzdyQWThBdpyc2PpHdATdvbXA==
   dependencies:
-    "@veramo/core" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
     cross-fetch "^3.1.4"
     debug "^4.3.3"
     openapi-types "11.0.0"
 
-"@veramo/selective-disclosure@3.1.2-next.95":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/selective-disclosure/-/selective-disclosure-3.1.2-next.95.tgz#ec19f83ba8f078b8ab8b5ec786c4306fcfa3fce1"
-  integrity sha512-5ig8DZSKXkr+zZZ84DI4bcVzE7GCUel08kOLnAZMoV/1X2/N0OjRQPY/3MSo12DxR6fClogpCUENUpuv3k/2LQ==
+"@veramo/selective-disclosure@3.1.2-next.98":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/selective-disclosure/-/selective-disclosure-3.1.2-next.98.tgz#d91aac6b3b4ab6a61b4941283236b13c1ecde3df"
+  integrity sha512-CDzSvY9SgNI6rDQIIJgk5nHjp2a3hvyf0xA1sYvDlnrAhDRnBW/TKzpb8YWkI6BS4M0jLfw/cSgQBBX8M2M0fQ==
   dependencies:
-    "@veramo/core" "^3.1.2-next.95+2374c712"
-    "@veramo/credential-w3c" "^3.1.2-next.95+2374c712"
-    "@veramo/did-jwt" "^3.1.2-next.95+2374c712"
-    "@veramo/message-handler" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
+    "@veramo/credential-w3c" "^3.1.2-next.98+5150b0ec"
+    "@veramo/did-jwt" "^3.1.2-next.98+5150b0ec"
+    "@veramo/message-handler" "^3.1.2-next.98+5150b0ec"
     debug "^4.3.3"
     did-jwt "^5.12.3"
     uuid "^8.3.0"
 
-"@veramo/utils@^3.1.2-next.95+2374c712":
-  version "3.1.2-next.95"
-  resolved "https://registry.yarnpkg.com/@veramo/utils/-/utils-3.1.2-next.95.tgz#9fdcf2538fada164e57d216d5fd3e35af147b109"
-  integrity sha512-mxy3x+0lD9BwP3oEtuTXs5wMwD1DsUkz5vc2BbjKIHx05I4sM2Bwx5/3Lvnw1r3SzXUwngd22VM5c3CUd28Rdg==
+"@veramo/utils@^3.1.2-next.98+5150b0ec":
+  version "3.1.2-next.98"
+  resolved "https://registry.yarnpkg.com/@veramo/utils/-/utils-3.1.2-next.98.tgz#87c84492fb12f00bb537a47b42444d07c185378c"
+  integrity sha512-zu0i6WlCXVfvrF4jhDIjFOs/D8vxt1CyMeITIjp4o7YKX42trTN7qHPBd/oJPLcWWYLxJWNPeAlUPj4M/1MdXQ==
   dependencies:
     "@ethersproject/transactions" "^5.5.0"
     "@stablelib/ed25519" "^1.0.2"
-    "@veramo/core" "^3.1.2-next.95+2374c712"
+    "@veramo/core" "^3.1.2-next.98+5150b0ec"
     blakejs "^1.1.1"
     cross-fetch "^3.1.4"
     debug "^4.3.3"
