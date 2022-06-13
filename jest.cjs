@@ -1,4 +1,4 @@
-{
+module.exports = {
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
   "collectCoverage": true,
   "collectCoverageFrom": ["src/**/*.ts"],
@@ -16,5 +16,9 @@
   },
   "testEnvironment": "jsdom",
   "automock": false,
-  "setupFilesAfterEnv": ["<rootDir>/jest-setup.js"]
+  "setupFilesAfterEnv": ["<rootDir>/jest-setup.js"],
+  "moduleNameMapper": {
+    // jest 28 loads modules differently. See https://jestjs.io/docs/upgrading-to-jest28#packagejson-exports
+    "^uuid$": require.resolve('uuid'),
+  }
 }
