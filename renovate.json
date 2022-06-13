@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base", "group:allNonMajor"],
+  "extends": ["config:base", "group:allNonMajor", "schedule:earlyMondays"],
   "labels": ["maintenance"],
   "automergeType": "branch",
   "automerge": true,
@@ -11,8 +11,7 @@
     },
     {
       "matchDepTypes": ["devDependencies"],
-      "groupName": "devDeps",
-      "schedule": ["before 5am on Monday"]
+      "groupName": "devDeps"
     }
   ]
 }
