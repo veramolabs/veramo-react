@@ -22,8 +22,6 @@
   "devDependencies": {
     "@babel/preset-env": "7.12.11",
     "@babel/preset-react": "7.12.10",
-    "@commitlint/cli": "17.0.2",
-    "@commitlint/config-conventional": "17.0.2",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/npm": "9.0.1",
@@ -35,10 +33,9 @@
     "@types/react-test-renderer": "18.0.0",
     "@types/uuid": "8.3.0",
     "babel-jest": "28.1.1",
-    "husky": "8.0.1",
     "jest": "28.1.1",
+    "jest-environment-jsdom": "28.1.1",
     "prettier": "2.2.1",
-    "pretty-quick": "3.1.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-test-renderer": "18.1.0",
@@ -49,7 +46,8 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -b --watch",
-    "test": "jest --config=jest.json --coverage=false",
+    "format": "prettier --write \"src/**/*.*[jt]s*\"",
+    "test": "jest --config=jest.cjs --coverage=false",
     "test:watch": "yarn test --watch --verbose",
     "upgrade-veramo": "yarn add @veramo/core@next @veramo/remote-client@next @veramo/credential-w3c@next @veramo/data-store@next @veramo/selective-disclosure@next @veramo/did-comm@next",
     "release": "semantic-release"
@@ -61,12 +59,6 @@
     "printWidth": 80,
     "singleQuote": true,
     "semi": false
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "eslintConfig": {
     "extends": [
@@ -88,9 +80,7 @@
   },
   "author": "Simonas Karuzas <simonas.karuzas@mesh.xyz>",
   "contributors": [
-    {
-      "name": "Jason Healy",
-      "email": "jason.healy@mesh.xyz"
-    }
+    "Jason Healy",
+    "Mircea Nistor mircea.nistor@mesh.xyz"
   ]
 }
