@@ -25,22 +25,34 @@ export function createAgentFromConfig(
 }
 
 export function getStoredAgentConfigs() {
+  if (typeof localStorage == 'undefined') {
+    return []
+  }
   return JSON.parse(
     localStorage.getItem('serializedAgentConfigs') || '[]',
   ) as ISerializedAgentConfig[]
 }
 
 export function storeAgentConfigs(configs: ISerializedAgentConfig[]) {
-  return localStorage.setItem('serializedAgentConfigs', JSON.stringify(configs))
+  if (typeof localStorage !== 'undefined') {
+    return localStorage.setItem(
+      'serializedAgentConfigs',
+      JSON.stringify(configs),
+    )
+  }
 }
 
 export function storeActiveAgentId(id?: string) {
-  return localStorage.setItem('activeAgentId', JSON.stringify(id))
+  if (typeof localStorage !== 'undefined') {
+    return localStorage.setItem('activeAgentId', JSON.stringify(id))
+  }
 }
 
 export function getStoredActiveAgentId() {
-  const storedId = localStorage.getItem('activeAgentId')
-  return storedId === null || storedId === 'undefined'
-    ? undefined
-    : JSON.parse(storedId)
+  if (typeof localStorage !== 'undefined') {
+    const storedId = localStorage.getItem('activeAgentId')
+    return storedId === null || storedId === 'undefined'
+      ? undefined
+      : JSON.parse(storedId)
+  }
 }

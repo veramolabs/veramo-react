@@ -1,8 +1,9 @@
 import React from 'react'
 import { renderHook, act } from '@testing-library/react-hooks'
-import { createAgent } from '@veramo/core'
+import { createAgent, TAgent, IDIDManager } from '@veramo/core'
 import { VeramoProvider, useVeramo } from '../VeramoProvider'
-import { IAgent, IContext } from '../types'
+import { IContext } from '../types'
+type IAgent = TAgent<IDIDManager>
 
 beforeEach(() => {
   window.localStorage.clear()
