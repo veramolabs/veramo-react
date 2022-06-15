@@ -8,15 +8,11 @@
   },
   "license": "Apache-2.0",
   "peerDependencies": {
+    "@veramo/core": "^3.1.2",
+    "@veramo/remote-client": "^3.1.2",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@veramo/core": "3.1.5-next.127",
-    "@veramo/credential-w3c": "3.1.5-next.127",
-    "@veramo/data-store": "3.1.5-next.127",
-    "@veramo/did-comm": "3.1.5-next.127",
-    "@veramo/remote-client": "3.1.5-next.127",
-    "@veramo/selective-disclosure": "3.1.5-next.127",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
@@ -32,6 +28,8 @@
     "@types/react": "18.0.12",
     "@types/react-test-renderer": "18.0.0",
     "@types/uuid": "8.3.4",
+    "@veramo/core": "^3.1.6-next.138",
+    "@veramo/remote-client": "^3.1.6-next.138",
     "babel-jest": "28.1.1",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
@@ -49,7 +47,7 @@
     "format": "prettier --write \"src/**/*.*[jt]s*\"",
     "test": "jest --config=jest.cjs --coverage=false",
     "test:watch": "yarn test --watch --verbose",
-    "upgrade-veramo": "yarn add @veramo/core@next @veramo/remote-client@next @veramo/credential-w3c@next @veramo/data-store@next @veramo/selective-disclosure@next @veramo/did-comm@next",
+    "upgrade-veramo": "yarn add -D @veramo/core@next @veramo/remote-client@next",
     "release": "semantic-release"
   },
   "prettier": {

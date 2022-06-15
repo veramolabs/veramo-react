@@ -8,12 +8,12 @@ import {
   getStoredActiveAgentId,
 } from './utils'
 import { v4 as uuidv4 } from 'uuid'
-import { ISerializedAgentConfig, IAgent, IContext } from './types'
+import { ISerializedAgentConfig, IContext } from './types'
 
 const VeramoReactContext = React.createContext<any>({})
 
 export function VeramoProvider<
-  T extends IPluginMethodMap = IAgent,
+  T extends IPluginMethodMap,
   C extends Record<string, any> = IContext
 >(props: {
   children: any
@@ -129,7 +129,7 @@ export function VeramoProvider<
 }
 
 export function useVeramo<
-  T extends IPluginMethodMap = IAgent,
+  T extends IPluginMethodMap,
   C extends Record<string, any> = IContext
 >() {
   return useContext<{

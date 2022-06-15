@@ -1,24 +1,5 @@
-import {
-  IDataStore,
-  IDataStoreORM,
-  IDIDManager,
-  IKeyManager,
-  IResolver,
-  IMessageHandler,
-  IAgentPluginSchema,
-} from '@veramo/core'
-import { ICredentialIssuer } from '@veramo/credential-w3c'
-import { IDIDComm } from '@veramo/did-comm'
-import { ISelectiveDisclosure } from '@veramo/selective-disclosure'
-export declare type IAgent = IDataStore &
-  IDataStoreORM &
-  ICredentialIssuer &
-  IDIDManager &
-  IDIDComm &
-  IKeyManager &
-  IResolver &
-  IMessageHandler &
-  ISelectiveDisclosure
+import { IAgentPluginSchema } from '@veramo/core'
+
 export interface IContext extends Record<string, any> {
   id?: string
   name?: string
