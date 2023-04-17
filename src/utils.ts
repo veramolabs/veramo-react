@@ -1,6 +1,6 @@
 import { createAgent, IAgentPlugin } from '@veramo/core'
 import { AgentRestClient } from '@veramo/remote-client'
-import { ISerializedAgentConfig, IContext } from './types'
+import { ISerializedAgentConfig, IContext } from './types.js'
 
 export function createAgentFromConfig(
   config: ISerializedAgentConfig,
