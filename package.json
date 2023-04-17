@@ -1,6 +1,6 @@
 {
   "name": "@veramo-community/veramo-react",
-  "version": "1.0.80",
+  "version": "1.0.81",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "type": "module",
