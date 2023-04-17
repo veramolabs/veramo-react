@@ -4,16 +4,12 @@ module.exports = {
   "collectCoverageFrom": ["src/**/*.ts"],
   "coverageReporters": ["text", "lcov", "json"],
   "coverageDirectory": "./coverage",
+  "extensionsToTreatAsEsm": [".ts", ".tsx"],
   "transform": {
     "\\.jsx?$": "babel-jest",
-    "\\.tsx?$": "ts-jest"
+    "\\.tsx?$": ["ts-jest", { "tsconfig": "tsconfig.json", "useESM": true, }]
   },
   "testMatch": ["<rootDir>/src/__tests__/**/*.test.*"],
-  "globals": {
-    "ts-jest": {
-      "tsconfig": "./tsconfig.json"
-    }
-  },
   "testEnvironment": "jsdom",
   "automock": false,
   "setupFilesAfterEnv": ["<rootDir>/jest-setup.js"],
