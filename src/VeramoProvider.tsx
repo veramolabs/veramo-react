@@ -6,9 +6,9 @@ import {
   storeAgentConfigs,
   storeActiveAgentId,
   getStoredActiveAgentId,
-} from './utils'
+} from './utils.js'
 import { v4 as uuidv4 } from 'uuid'
-import { ISerializedAgentConfig, IContext } from './types'
+import { ISerializedAgentConfig, IContext } from './types.js'
 
 const VeramoReactContext = React.createContext<any>({})
 

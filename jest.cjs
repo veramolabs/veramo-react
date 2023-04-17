@@ -5,6 +5,7 @@ module.exports = {
   "coverageReporters": ["text", "lcov", "json"],
   "coverageDirectory": "./coverage",
   "extensionsToTreatAsEsm": [".ts", ".tsx"],
+  "resolver": "ts-jest-resolver",
   "transform": {
     "\\.jsx?$": "babel-jest",
     "\\.tsx?$": ["ts-jest", { "tsconfig": "tsconfig.json", "useESM": true, }]

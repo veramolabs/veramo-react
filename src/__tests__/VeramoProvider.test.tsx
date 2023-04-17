@@ -1,8 +1,8 @@
 import React from 'react'
 import { renderHook, act } from '@testing-library/react-hooks'
 import { createAgent, TAgent, IDIDManager } from '@veramo/core'
-import { VeramoProvider, useVeramo } from '../VeramoProvider'
-import { IContext } from '../types'
+import { VeramoProvider, useVeramo } from '../VeramoProvider.js'
+import { IContext } from '../types.js'
 type IAgent = TAgent<IDIDManager>
 
 beforeEach(() => {
