@@ -2422,10 +2422,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@18.2.19":
-  version "18.2.19"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.19.tgz#f77cb2c8307368e624d464a25b9675fa35f95a8b"
-  integrity sha512-e2S8wmY1ePfM517PqCG80CcE48Xs5k0pwJzuDZsfE8IZRRBfOMCF+XqnFxu6mWtyivum1MQm4aco+WIt6Coimw==
+"@types/react@18.2.20":
+  version "18.2.20"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.20.tgz#1605557a83df5c8a2cc4eeb743b3dfc0eb6aaeb2"
+  integrity sha512-WKNtmsLWJM/3D5mG4U84cysVY31ivmyw85dE84fOCk5Hx78wezB/XEjVPWl2JTZ5FkEeaTJf+VgUAUn3PE7Isw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2470,33 +2470,33 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@veramo/core-types@^5.4.2-next.4+75e66d9e":
-  version "5.4.2-next.4"
-  resolved "https://registry.yarnpkg.com/@veramo/core-types/-/core-types-5.4.2-next.4.tgz#41ddf390ef2003004207b20c927cf3d703d76eeb"
-  integrity sha512-bOgvE5tv4OzQk4iRTT2F0QAx6OXY2XLA6pFxsSb4m4m4M7JmhFe0Jn1ywondBpABZ1ih8nvBJRF279Oi3nDK/A==
+"@veramo/core-types@^5.4.2-next.10+75048ce32":
+  version "5.4.2-next.10"
+  resolved "https://registry.yarnpkg.com/@veramo/core-types/-/core-types-5.4.2-next.10.tgz#4e2ca77279febcd72c5ab4a386e473912e47c053"
+  integrity sha512-INe8bo5CVVhYGEDFWrR3q2Z7ynwxRptJwtBYi89MQoipK9LddRMwAis79QObw9pqICeRGSsxgbRpjDZ2uvO2Nw==
   dependencies:
     credential-status "^2.0.5"
     debug "^4.3.3"
     did-jwt-vc "^3.2.3"
     did-resolver "^4.1.0"
 
-"@veramo/core@5.4.2-next.4":
-  version "5.4.2-next.4"
-  resolved "https://registry.yarnpkg.com/@veramo/core/-/core-5.4.2-next.4.tgz#298273b9d267ad68c43e6f268dc889b4c2e88e08"
-  integrity sha512-4MilpFfFzGS6d1TEqzrg9Etu7a/9O1r19vApQrk1lWc+3pq8PaJK6OIg7hsuEIh0N+1WZeDNZT8K4h+m7r7Lew==
+"@veramo/core@5.4.2-next.10":
+  version "5.4.2-next.10"
+  resolved "https://registry.yarnpkg.com/@veramo/core/-/core-5.4.2-next.10.tgz#c814ce490ef1c847a8a70c003eb0cb699bdb3ea6"
+  integrity sha512-4Z9G7va64USaZ5GLd9XGFjbavnMDEMacZlk8NHsApUrs9zFMh+EFzIDCWqDXuQzhukfV1ELyPlD5rg3i88L9WA==
   dependencies:
-    "@veramo/core-types" "^5.4.2-next.4+75e66d9e"
+    "@veramo/core-types" "^5.4.2-next.10+75048ce32"
     debug "^4.3.4"
     events "^3.2.0"
     z-schema "^6.0.1"
 
-"@veramo/remote-client@5.4.2-next.4":
-  version "5.4.2-next.4"
-  resolved "https://registry.yarnpkg.com/@veramo/remote-client/-/remote-client-5.4.2-next.4.tgz#c92a2cb360bc0aca83be9af6d909458ef04b9596"
-  integrity sha512-zR7ro0dWYcrc8ObVA4ksyrUbVqJ7i+sH6X0P5If7R6+WYHBKI5yZN6a+jHhPrpoWvpRQRWPw259zJIQV+RFi9A==
+"@veramo/remote-client@5.4.2-next.10":
+  version "5.4.2-next.10"
+  resolved "https://registry.yarnpkg.com/@veramo/remote-client/-/remote-client-5.4.2-next.10.tgz#e694bf286eed72b945f087064ff69edbf9cd9145"
+  integrity sha512-kBIYP2uLibmQqkfL7lHx1MBjdjUKAe5fSI4+WKteIFK1W211ctPp73taL5J5OVEl8s1HYSNlVy4R3wwyh0htig==
   dependencies:
-    "@veramo/core-types" "^5.4.2-next.4+75e66d9e"
-    cross-fetch "^3.1.6"
+    "@veramo/core-types" "^5.4.2-next.10+75048ce32"
+    cross-fetch "^4.0.0"
     debug "^4.3.3"
     openapi-types "12.1.3"
 
@@ -3358,12 +3358,12 @@ credential-status@^2.0.5:
     did-jwt "^6.3.0"
     did-resolver "^4.0.0"
 
-cross-fetch@^3.1.6:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.6.tgz#bae05aa31a4da760969756318feeee6e70f15d6c"
-  integrity sha512-riRvo06crlE8HiqOwIpQhxwdOk4fOeR7FVM/wXoxchFEqMNUjvbs3bfo4OTgMEMHzppd4DxFBDbyySj8Cv781g==
+cross-fetch@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-4.0.0.tgz#f037aef1580bb3a1a35164ea2a848ba81b445983"
+  integrity sha512-e4a5N8lVvuLgAWgnCrLr2PP0YyDOTHa9H/Rj54dirp61qXnNq46m82bRhNqIA5VccJtWBvPTFRV3TtvHUKPB1g==
   dependencies:
-    node-fetch "^2.6.11"
+    node-fetch "^2.6.12"
 
 cross-spawn@^7.0.3:
   version "7.0.3"
@@ -5751,10 +5751,10 @@ node-emoji@^1.11.0:
   dependencies:
     lodash "^4.17.21"
 
-node-fetch@^2.6.11:
-  version "2.6.11"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.11.tgz#cde7fc71deef3131ef80a738919f999e6edfff25"
-  integrity sha512-4I6pdBY1EthSqDmJkiNk3JIT8cswwR9nfeW/cPdUagJYEQG7R95WRH74wpz7ma8Gh/9dI9FP+OU+0E4FvtA55w==
+node-fetch@^2.6.12:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.12.tgz#02eb8e22074018e3d5a83016649d04df0e348fba"
+  integrity sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==
   dependencies:
     whatwg-url "^5.0.0"
 
