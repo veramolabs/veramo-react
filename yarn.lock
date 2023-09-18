@@ -2597,7 +2597,7 @@
     did-jwt-vc "^3.2.5"
     did-resolver "^4.1.0"
 
-"@veramo/core@5.4.2-next.23":
+"@veramo/core@^5.4.2-next.23":
   version "5.4.2-next.23"
   resolved "https://registry.yarnpkg.com/@veramo/core/-/core-5.4.2-next.23.tgz#949fdcd779e86b3ea96af38e8f4bb3f8b1d62a65"
   integrity sha512-kVHVZc90UZxjIsqcDoAT+nnVTqODzzNGalTF23T1+1rQQVTU1bS5aRVYS4O9+CZZQPH7xrANNIrGd2k4IBrRBA==
@@ -2607,7 +2607,7 @@
     events "^3.2.0"
     z-schema "^6.0.1"
 
-"@veramo/remote-client@5.4.2-next.23":
+"@veramo/remote-client@^5.4.2-next.23":
   version "5.4.2-next.23"
   resolved "https://registry.yarnpkg.com/@veramo/remote-client/-/remote-client-5.4.2-next.23.tgz#450b3fe35f6e6311c285ba0fe8bd11dec0e89696"
   integrity sha512-YqVQ08tWkurdfXKRV1FrtpFl1gH6cHCsM+mkiNZri0I+Uij+pr9zaykDYPIAe/3E/tlpziSao0AF1RxPqbazTw==
