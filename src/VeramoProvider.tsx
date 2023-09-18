@@ -21,7 +21,9 @@ export function VeramoProvider<
   plugins?: IAgentPlugin[]
 }) {
   const initialAgents = (props.agents || []).concat(
-    getStoredAgentConfigs().map((c) => createAgentFromConfig(c, props.plugins)),
+    getStoredAgentConfigs().map(
+      (c) => createAgentFromConfig(c, props.plugins)
+    ),
   )
 
   const initialActiveAgentId =
