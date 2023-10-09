@@ -64,7 +64,9 @@ export const agent = createAgent<IResolver>({
   plugins: [
     new DIDResolverPlugin({
       resolver: new Resolver({
-        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+        ...ethrDidResolver({ 
+          infuraProjectId: INFURA_PROJECT_ID
+         }),
         ...webDidResolver(),
       }),
     }),
