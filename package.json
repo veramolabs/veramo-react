@@ -9,11 +9,12 @@
   },
   "license": "Apache-2.0",
   "peerDependencies": {
-    "@veramo/core": "^5.5.2-next.3 || ^5.5.3-next",
-    "@veramo/remote-client": "^5.5.2-next.3 || ^5.5.3-next",
+    "@veramo/core": "^5.5.3-next.17",
+    "@veramo/remote-client": "^5.5.3-next.17",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.0",
     "@babel/preset-env": "7.22.20",
     "@babel/preset-react": "7.22.15",
     "@semantic-release/commit-analyzer": "11.0.0",
@@ -26,8 +27,8 @@
     "@types/react": "18.2.25",
     "@types/react-test-renderer": "18.0.3",
     "@types/uuid": "9.0.5",
-    "@veramo/core": "^5.5.3-next",
-    "@veramo/remote-client": "^5.5.3-next",
+    "@veramo/core": "5.5.3-next.17",
+    "@veramo/remote-client": "5.5.3-next.17",
     "babel-jest": "29.7.0",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
