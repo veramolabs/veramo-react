@@ -9,8 +9,8 @@
   },
   "license": "Apache-2.0",
   "peerDependencies": {
-    "@veramo/core": "^5.5.2-next.3",
-    "@veramo/remote-client": "^5.5.2-next.3",
+    "@veramo/core": "^5.5.2-next.3 || ^5.5.3-next",
+    "@veramo/remote-client": "^5.5.2-next.3 || ^5.5.3-next",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
