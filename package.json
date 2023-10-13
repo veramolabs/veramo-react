@@ -8,10 +8,11 @@
     "access": "public"
   },
   "license": "Apache-2.0",
-  "peerDependencies": {
-    "@veramo/core": "*",
-    "@veramo/remote-client": "*",
-    "react": "*"
+  "dependencies": {
+    "@veramo/core": "5.5.4-next.18",
+    "@veramo/remote-client": "5.5.4-next.18",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
@@ -27,14 +28,10 @@
     "@types/react": "18.2.25",
     "@types/react-test-renderer": "18.0.3",
     "@types/uuid": "9.0.5",
-    "@veramo/core": "5.5.4-next.18",
-    "@veramo/remote-client": "5.5.4-next.18",
     "babel-jest": "29.7.0",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
     "prettier": "3.0.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "react-test-renderer": "18.2.0",
     "semantic-release": "22.0.5",
     "ts-jest": "29.1.1",
