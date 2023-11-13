@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@veramo/core':
-    specifier: 5.5.4-next.22
-    version: 5.5.4-next.22
+    specifier: 5.5.4-next.23
+    version: 5.5.4-next.23
   '@veramo/remote-client':
-    specifier: 5.5.4-next.22
-    version: 5.5.4-next.22
+    specifier: 5.5.4-next.23
+    version: 5.5.4-next.23
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -2237,8 +2237,8 @@ packages:
       '@types/yargs-parser': 21.0.0
     dev: true
 
-  /@veramo/core-types@5.5.4-next.22:
-    resolution: {integrity: sha512-EmVhsW5i7Hloc0kx9Ze6xrS6n7P71HDC19DKjLuG2YrtZnIaykTByY27C7eM+xEy+7ImYcXp97rb4Vz429r7sw==}
+  /@veramo/core-types@5.5.4-next.23:
+    resolution: {integrity: sha512-+nt2zadkRraBjD6ipEVrK9Esyg8x7/CAcmbrICg/5v2MAJlFvdkGueMbSqHlFsVVIYwZJ81DTMpF6AFJyCE17A==}
     dependencies:
       credential-status: 2.0.6
       debug: 4.3.4
@@ -2248,10 +2248,10 @@ packages:
       - supports-color
     dev: false
 
-  /@veramo/core@5.5.4-next.22:
-    resolution: {integrity: sha512-WlLDFlzat5bkZwcnzOeXdkyvvI5IAoIZM178VODKKhvmIk2FcOyuPWXPH6io4m4VpvDU1HVTMu2/4qMvygrh/A==}
+  /@veramo/core@5.5.4-next.23:
+    resolution: {integrity: sha512-XFT4T4LWGtfA6DGUq/zHB7ZwlwSJhSRejI8BXShh0Fx3V90ARebrUZ63hNQ0ALydRGYVEIlD0s8UhMAINz4/wA==}
     dependencies:
-      '@veramo/core-types': 5.5.4-next.22
+      '@veramo/core-types': 5.5.4-next.23
       debug: 4.3.4
       events: 3.3.0
       z-schema: 6.0.1
@@ -2259,10 +2259,10 @@ packages:
       - supports-color
     dev: false
 
-  /@veramo/remote-client@5.5.4-next.22:
-    resolution: {integrity: sha512-yNlhKYMQ3HATFVW6swA3cHRvNUg79+1lGq9kFeQERwDAs0I0F1yiXubU1+ZBaE8KUfyaec85JB+sSKdz7RrnxQ==}
+  /@veramo/remote-client@5.5.4-next.23:
+    resolution: {integrity: sha512-id4C7NI4LCLs37O+MB+C+w13WjOeDYLmJZipK1KW3zR7xn3i9pqb8gxluAYbHrH1RkAGUEEuZ+DyIdutLogYww==}
     dependencies:
-      '@veramo/core-types': 5.5.4-next.22
+      '@veramo/core-types': 5.5.4-next.23
       cross-fetch: 4.0.0
       debug: 4.3.4
       openapi-types: 12.1.3
