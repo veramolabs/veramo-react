@@ -9,8 +9,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@veramo/core": "5.5.4-next.30",
-    "@veramo/remote-client": "5.5.4-next.30",
+    "@veramo/core": "5.5.4-next.32",
+    "@veramo/remote-client": "5.5.4-next.32",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
