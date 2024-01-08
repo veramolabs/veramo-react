@@ -41,17 +41,17 @@ devDependencies:
     specifier: 12.1.0
     version: 12.1.0(semantic-release@22.0.12)
   '@testing-library/jest-dom':
-    specifier: 6.1.6
-    version: 6.1.6(@types/jest@29.5.11)(jest@29.7.0)
+    specifier: 6.2.0
+    version: 6.2.0(@types/jest@29.5.11)(jest@29.7.0)
   '@testing-library/react-hooks':
     specifier: 8.0.1
-    version: 8.0.1(@types/react@18.2.46)(react-dom@18.2.0)(react-test-renderer@18.2.0)(react@18.2.0)
+    version: 8.0.1(@types/react@18.2.47)(react-dom@18.2.0)(react-test-renderer@18.2.0)(react@18.2.0)
   '@types/jest':
     specifier: 29.5.11
     version: 29.5.11
   '@types/react':
-    specifier: 18.2.46
-    version: 18.2.46
+    specifier: 18.2.47
+    version: 18.2.47
   '@types/react-test-renderer':
     specifier: 18.0.7
     version: 18.0.7
@@ -2093,8 +2093,8 @@ packages:
       '@stablelib/xchacha20': 1.0.1
     dev: false
 
-  /@testing-library/jest-dom@6.1.6(@types/jest@29.5.11)(jest@29.7.0):
-    resolution: {integrity: sha512-YwuiOdYEcxhfC2u5iNKlvg2Q5MgbutovP6drq7J1HrCbvR+G58BbtoCoq+L/kNlrNFsu2Kt3jaFAviLVxYHJZg==}
+  /@testing-library/jest-dom@6.2.0(@types/jest@29.5.11)(jest@29.7.0):
+    resolution: {integrity: sha512-+BVQlJ9cmEn5RDMUS8c2+TU6giLvzaHZ8sU/x0Jj7fk+6/46wPdwlgOPcpxS17CjcanBi/3VmGMqVr2rmbUmNw==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
     peerDependencies:
       '@jest/globals': '>= 28'
@@ -2117,13 +2117,13 @@ packages:
       aria-query: 5.3.0
       chalk: 3.0.0
       css.escape: 1.5.1
-      dom-accessibility-api: 0.5.16
+      dom-accessibility-api: 0.6.3
       jest: 29.7.0
       lodash: 4.17.21
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@18.2.46)(react-dom@18.2.0)(react-test-renderer@18.2.0)(react@18.2.0):
+  /@testing-library/react-hooks@8.0.1(@types/react@18.2.47)(react-dom@18.2.0)(react-test-renderer@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -2140,7 +2140,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.22.15
-      '@types/react': 18.2.46
+      '@types/react': 18.2.47
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-error-boundary: 3.1.4(react@18.2.0)
@@ -2233,11 +2233,11 @@ packages:
   /@types/react-test-renderer@18.0.7:
     resolution: {integrity: sha512-1+ANPOWc6rB3IkSnElhjv6VLlKg2dSv/OWClUyZimbLsQyBn8Js9Vtdsi3UICJ2rIQ3k2la06dkB+C92QfhKmg==}
     dependencies:
-      '@types/react': 18.2.46
+      '@types/react': 18.2.47
     dev: true
 
-  /@types/react@18.2.46:
-    resolution: {integrity: sha512-nNCvVBcZlvX4NU1nRRNV/mFl1nNRuTuslAJglQsq+8ldXe5Xv0Wd2f7WTE3jOxhLH2BFfiZGC6GCp+kHQbgG+w==}
+  /@types/react@18.2.47:
+    resolution: {integrity: sha512-xquNkkOirwyCgoClNk85BjP+aqnIS+ckAJ8i37gAbDs14jfW/J23f2GItAf33oiUPQnqNMALiFeoM9Y5mbjpVQ==}
     dependencies:
       '@types/prop-types': 15.7.6
       '@types/scheduler': 0.16.3
@@ -3067,8 +3067,8 @@ packages:
       path-type: 4.0.0
     dev: true
 
-  /dom-accessibility-api@0.5.16:
-    resolution: {integrity: sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==}
+  /dom-accessibility-api@0.6.3:
+    resolution: {integrity: sha512-7ZgogeTnjuHbo+ct10G9Ffp0mif17idi0IyWNVA/wcwcm7NPOD/WEHVP3n7n3MhXqxoIYm8d6MuZohYWIZ4T3w==}
     dev: true
 
   /domexception@4.0.0:
