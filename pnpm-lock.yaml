@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^7.23.0
     version: 7.23.0
   '@babel/preset-env':
-    specifier: 7.23.7
-    version: 7.23.7(@babel/core@7.23.0)
+    specifier: 7.23.8
+    version: 7.23.8(@babel/core@7.23.0)
   '@babel/preset-react':
     specifier: 7.23.3
     version: 7.23.3(@babel/core@7.23.0)
@@ -68,8 +68,8 @@ devDependencies:
     specifier: 29.7.0
     version: 29.7.0
   prettier:
-    specifier: 3.1.1
-    version: 3.1.1
+    specifier: 3.2.2
+    version: 3.2.2
   react-test-renderer:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
@@ -742,8 +742,8 @@ packages:
       '@babel/plugin-syntax-class-static-block': 7.14.5(@babel/core@7.23.0)
     dev: true
 
-  /@babel/plugin-transform-classes@7.23.5(@babel/core@7.23.0):
-    resolution: {integrity: sha512-jvOTR4nicqYC9yzOHIhXG5emiFEOpappSJAl73SDSEDcybD+Puuze8Tnpb9p9qEyYup24tq891gkaygIFvWDqg==}
+  /@babel/plugin-transform-classes@7.23.8(@babel/core@7.23.0):
+    resolution: {integrity: sha512-yAYslGsY1bX6Knmg46RjiCiNSwJKv2IUC8qOdYKqMMr0491SXFhcHqOdRDeCRohOOIzwN/90C6mQ9qAKgrP7dg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -753,7 +753,6 @@ packages:
       '@babel/helper-compilation-targets': 7.23.6
       '@babel/helper-environment-visitor': 7.22.20
       '@babel/helper-function-name': 7.23.0
-      '@babel/helper-optimise-call-expression': 7.22.5
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/helper-replace-supers': 7.22.20(@babel/core@7.23.0)
       '@babel/helper-split-export-declaration': 7.22.6
@@ -1242,8 +1241,8 @@ packages:
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
-  /@babel/preset-env@7.23.7(@babel/core@7.23.0):
-    resolution: {integrity: sha512-SY27X/GtTz/L4UryMNJ6p4fH4nsgWbz84y9FE0bQeWJP6O5BhgVCt53CotQKHCOeXJel8VyhlhujhlltKms/CA==}
+  /@babel/preset-env@7.23.8(@babel/core@7.23.0):
+    resolution: {integrity: sha512-lFlpmkApLkEP6woIKprO6DO60RImpatTQKtz4sUcDjVcK8M8mQ4sZsuxaTMNOZf0sqAq/ReYW1ZBHnOQwKpLWA==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -1282,7 +1281,7 @@ packages:
       '@babel/plugin-transform-block-scoping': 7.23.4(@babel/core@7.23.0)
       '@babel/plugin-transform-class-properties': 7.23.3(@babel/core@7.23.0)
       '@babel/plugin-transform-class-static-block': 7.23.4(@babel/core@7.23.0)
-      '@babel/plugin-transform-classes': 7.23.5(@babel/core@7.23.0)
+      '@babel/plugin-transform-classes': 7.23.8(@babel/core@7.23.0)
       '@babel/plugin-transform-computed-properties': 7.23.3(@babel/core@7.23.0)
       '@babel/plugin-transform-destructuring': 7.23.3(@babel/core@7.23.0)
       '@babel/plugin-transform-dotall-regex': 7.23.3(@babel/core@7.23.0)
@@ -1327,7 +1326,7 @@ packages:
       babel-plugin-polyfill-corejs2: 0.4.7(@babel/core@7.23.0)
       babel-plugin-polyfill-corejs3: 0.8.7(@babel/core@7.23.0)
       babel-plugin-polyfill-regenerator: 0.5.4(@babel/core@7.23.0)
-      core-js-compat: 3.32.2
+      core-js-compat: 3.35.0
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
@@ -2844,12 +2843,6 @@ packages:
 
   /convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
-    dev: true
-
-  /core-js-compat@3.32.2:
-    resolution: {integrity: sha512-+GjlguTDINOijtVRUxrQOv3kfu9rl+qPNdX2LTbJ/ZyVTuxK+ksVSAGX1nHstu4hrv1En/uPTtWgq2gI5wt4AQ==}
-    dependencies:
-      browserslist: 4.22.2
     dev: true
 
   /core-js-compat@3.35.0:
@@ -4946,8 +4939,8 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /prettier@3.1.1:
-    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+  /prettier@3.2.2:
+    resolution: {integrity: sha512-HTByuKZzw7utPiDO523Tt2pLtEyK7OibUD9suEJQrPUCYQqrHr74GGX6VidMrovbf/I50mPqr8j/II6oBAuc5A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
