@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@veramo/core':
-    specifier: 5.6.1-next.44
-    version: 5.6.1-next.44
+    specifier: 5.6.1-next.45
+    version: 5.6.1-next.45
   '@veramo/remote-client':
-    specifier: 5.6.1-next.44
-    version: 5.6.1-next.44
+    specifier: 5.6.1-next.45
+    version: 5.6.1-next.45
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -2287,8 +2287,8 @@ packages:
       - supports-color
     dev: false
 
-  /@veramo/core@5.6.1-next.44:
-    resolution: {integrity: sha512-vTq5UT2ZXRUex24ePUpRXx5b9eREsZhN3qOdHjRf/+HIZ7dY8EdFgArNK0nvZ8hR6FFaXa3X2cDvYIywuY38xQ==}
+  /@veramo/core@5.6.1-next.45:
+    resolution: {integrity: sha512-PIzIPLJSp7VK3dtH5qkYtj4tqOtG0XJ0erXNVcuUNtXlNuaf4Bq5CeGy9ZSBloPm3JLx+309wohhGIINuddknA==}
     dependencies:
       '@veramo/core-types': 5.6.1-unstable.36
       debug: 4.3.4
@@ -2298,8 +2298,8 @@ packages:
       - supports-color
     dev: false
 
-  /@veramo/remote-client@5.6.1-next.44:
-    resolution: {integrity: sha512-1qUANPuHTrhXwpuHw8YhcxHLE/jrQX7cIuJ21g8ofbd9dAExBX+UMDxgpT+VDs8wJWxd2LVo0AtwcLhRT1W51w==}
+  /@veramo/remote-client@5.6.1-next.45:
+    resolution: {integrity: sha512-T9RiMCJnlnlU+P97AX89Cg7VCZo70Y6ZpycSyX29jwz9IG2z9+j4zoGNP1YWYzfEUZoEQQL2GT2c84E2XFIN8A==}
     dependencies:
       '@veramo/core-types': 5.6.1-unstable.36
       cross-fetch: 4.0.0
