@@ -16,8 +16,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
-    "@babel/preset-env": "7.24.0",
-    "@babel/preset-react": "7.23.3",
+    "@babel/preset-env": "7.24.3",
+    "@babel/preset-react": "7.24.1",
     "@semantic-release/commit-analyzer": "12.0.0",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/npm": "12.0.0",
@@ -25,7 +25,7 @@
     "@testing-library/jest-dom": "6.4.2",
     "@testing-library/react-hooks": "8.0.1",
     "@types/jest": "29.5.12",
-    "@types/react": "18.2.66",
+    "@types/react": "18.2.73",
     "@types/react-test-renderer": "18.0.7",
     "@types/uuid": "9.0.8",
     "babel-jest": "29.7.0",
@@ -33,10 +33,10 @@
     "jest-environment-jsdom": "29.7.0",
     "prettier": "3.2.5",
     "react-test-renderer": "18.2.0",
-    "semantic-release": "23.0.4",
+    "semantic-release": "23.0.6",
     "ts-jest": "29.1.2",
     "ts-jest-resolver": "^2.0.1",
-    "typescript": "5.4.2",
+    "typescript": "5.4.3",
     "uuid": "^9.0.0"
   },
   "scripts": {
