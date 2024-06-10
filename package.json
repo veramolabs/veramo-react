@@ -37,7 +37,7 @@
     "ts-jest": "29.1.2",
     "ts-jest-resolver": "^2.0.1",
     "typescript": "5.4.2",
-    "uuid": "^9.0.0"
+    "uuid": "^10.0.0"
   },
   "scripts": {
     "build": "tsc",
