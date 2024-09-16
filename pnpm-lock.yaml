@@ -47,8 +47,8 @@ devDependencies:
     specifier: 8.0.1
     version: 8.0.1(@types/react@18.3.5)(react-dom@18.3.1)(react-test-renderer@18.3.1)(react@18.3.1)
   '@types/jest':
-    specifier: 29.5.12
-    version: 29.5.12
+    specifier: 29.5.13
+    version: 29.5.13
   '@types/react':
     specifier: 18.3.5
     version: 18.3.5
@@ -2163,8 +2163,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest@29.5.12:
-    resolution: {integrity: sha512-eDC8bTvT/QhYdxJAulQikueigY5AsdBRH2yDKW3yveW7svY3+DzN84/2NUgkw10RTiJbWqZrTtoGVdYlvFJdLw==}
+  /@types/jest@29.5.13:
+    resolution: {integrity: sha512-wd+MVEZCHt23V0/L642O5APvspWply/rGY5BcW4SUETo2UzPU3Z26qr8jC2qxpimI2jjx9h7+2cj2FwIr01bXg==}
     dependencies:
       expect: 29.7.0
       pretty-format: 29.7.0
@@ -4969,7 +4969,7 @@ packages:
     dependencies:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
-      react-is: 18.2.0
+      react-is: 18.3.1
     dev: true
 
   /pretty-ms@9.0.0:
@@ -5043,10 +5043,6 @@ packages:
     dependencies:
       '@babel/runtime': 7.22.15
       react: 18.3.1
-    dev: true
-
-  /react-is@18.2.0:
-    resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
   /react-is@18.3.1:
