@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@veramo/core':
-    specifier: 6.0.1-next.13
-    version: 6.0.1-next.13
+    specifier: 6.0.1-next.14
+    version: 6.0.1-next.14
   '@veramo/remote-client':
-    specifier: 6.0.1-next.13
-    version: 6.0.1-next.13
+    specifier: 6.0.1-next.14
+    version: 6.0.1-next.14
   react:
     specifier: 18.3.1
     version: 18.3.1
@@ -2239,34 +2239,34 @@ packages:
       '@types/yargs-parser': 21.0.0
     dev: true
 
-  /@veramo/core-types@6.0.1-next.13:
-    resolution: {integrity: sha512-mYOkaAtFlyoRDLAZRyun09GJ51wQDPdddUIzhVf5kFJPeG4EeACtd+M7HykxRwXKSB78Crr/w02KQPs/CWBzZg==}
+  /@veramo/core-types@6.0.1-next.14:
+    resolution: {integrity: sha512-AM5HchkvsUNPhiVHPO4B16mV2iJz9a1ICw+GWFgsLk2hP193wHd5RaDeV9D0ACwBHrCQtvrqUF4u97Yknebwyw==}
     dependencies:
       credential-status: 3.0.4
-      debug: 4.3.4
+      debug: 4.3.7
       did-jwt-vc: 4.0.0
       did-resolver: 4.1.0
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@veramo/core@6.0.1-next.13:
-    resolution: {integrity: sha512-cB3sghS/vXROMvpRFQ/32np6xqRu88E8TOwfnZxI434bfixHHCtmNeaxeubIVMFi9Kr7L1x7hb0yHntOHpyHjg==}
+  /@veramo/core@6.0.1-next.14:
+    resolution: {integrity: sha512-z/Hdblfw6j91K75bVetxlkP9WKM8ehK6Szqs+rymJkyIhcksaEMQzNpupdBBKjpVCrAoAET7DCllKYgTXVAPkw==}
     dependencies:
-      '@veramo/core-types': 6.0.1-next.13
-      debug: 4.3.4
+      '@veramo/core-types': 6.0.1-next.14
+      debug: 4.3.7
       events: 3.3.0
       z-schema: 6.0.1
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@veramo/remote-client@6.0.1-next.13:
-    resolution: {integrity: sha512-/h4dJogpemK2/vbwxvnxlSKncrz7YIZQPQ8avSkv57QuVDzb04TILlSGr2tyA4a5LCBIcLIL3YLwzKpTvtC3IQ==}
+  /@veramo/remote-client@6.0.1-next.14:
+    resolution: {integrity: sha512-nLaqX1NVd9QfHm+g9zd1TkRbJdUmCWTQ24Gw8wxGlOduvPK5wg2csuHnRmMw+0CgFbIf1E8o1DdP5a8OKdHJUA==}
     dependencies:
-      '@veramo/core-types': 6.0.1-next.13
+      '@veramo/core-types': 6.0.1-next.14
       cross-fetch: 4.0.0
-      debug: 4.3.4
+      debug: 4.3.7
       openapi-types: 12.1.3
     transitivePeerDependencies:
       - encoding
@@ -2922,6 +2922,7 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
 
   /debug@4.3.7:
     resolution: {integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==}
@@ -2933,7 +2934,6 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.3
-    dev: true
 
   /decimal.js@10.4.3:
     resolution: {integrity: sha512-VBBaLc1MgL5XpzgIP7ny5Z6Nx3UrRkIViUkPUdtl9aya5amy3De1gsUUSB1g3+3sExYNjCAsAznmukyxCb1GRA==}
@@ -4541,10 +4541,10 @@ packages:
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+    dev: true
 
   /ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
-    dev: true
 
   /multibase@4.0.6:
     resolution: {integrity: sha512-x23pDe5+svdLz/k5JPGCVdfn7Q5mZVMBETiC+ORfO+sor9Sgs0smJzAjfTbM5tckeCqnaUuMYoz+k3RXMmJClQ==}
