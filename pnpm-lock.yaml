@@ -41,17 +41,17 @@ devDependencies:
     specifier: 14.0.3
     version: 14.0.3(semantic-release@24.2.7)
   '@testing-library/jest-dom':
-    specifier: 6.7.0
-    version: 6.7.0
+    specifier: 6.8.0
+    version: 6.8.0
   '@testing-library/react-hooks':
     specifier: 8.0.1
-    version: 8.0.1(@types/react@19.1.10)(react-dom@19.1.1)(react-test-renderer@19.1.1)(react@19.1.1)
+    version: 8.0.1(@types/react@19.1.11)(react-dom@19.1.1)(react-test-renderer@19.1.1)(react@19.1.1)
   '@types/jest':
     specifier: 30.0.0
     version: 30.0.0
   '@types/react':
-    specifier: 19.1.10
-    version: 19.1.10
+    specifier: 19.1.11
+    version: 19.1.11
   '@types/react-test-renderer':
     specifier: 19.1.0
     version: 19.1.0
@@ -2352,8 +2352,8 @@ packages:
       '@sinonjs/commons': 3.0.1
     dev: true
 
-  /@testing-library/jest-dom@6.7.0:
-    resolution: {integrity: sha512-RI2e97YZ7MRa+vxP4UUnMuMFL2buSsf0ollxUbTgrbPLKhMn8KVTx7raS6DYjC7v1NDVrioOvaShxsguLNISCA==}
+  /@testing-library/jest-dom@6.8.0:
+    resolution: {integrity: sha512-WgXcWzVM6idy5JaftTVC8Vs83NKRmGJz4Hqs4oyOuO2J4r/y79vvKZsb+CaGyCSEbUPI6OsewfPd0G1A0/TUZQ==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@adobe/css-tools': 4.4.0
@@ -2364,7 +2364,7 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@19.1.10)(react-dom@19.1.1)(react-test-renderer@19.1.1)(react@19.1.1):
+  /@testing-library/react-hooks@8.0.1(@types/react@19.1.11)(react-dom@19.1.1)(react-test-renderer@19.1.1)(react@19.1.1):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -2381,7 +2381,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.22.15
-      '@types/react': 19.1.10
+      '@types/react': 19.1.11
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
       react-error-boundary: 3.1.4(react@19.1.1)
@@ -2477,11 +2477,11 @@ packages:
   /@types/react-test-renderer@19.1.0:
     resolution: {integrity: sha512-XD0WZrHqjNrxA/MaR9O22w/RNidWR9YZmBdRGI7wcnWGrv/3dA8wKCJ8m63Sn+tLJhcjmuhOi629N66W6kgWzQ==}
     dependencies:
-      '@types/react': 19.1.10
+      '@types/react': 19.1.11
     dev: true
 
-  /@types/react@19.1.10:
-    resolution: {integrity: sha512-EhBeSYX0Y6ye8pNebpKrwFJq7BoQ8J5SO6NlvNwwHjSj6adXJViPQrKlsyPw7hLBLvckEMO1yxeGdR82YBBlDg==}
+  /@types/react@19.1.11:
+    resolution: {integrity: sha512-lr3jdBw/BGj49Eps7EvqlUaoeA0xpj3pc0RoJkHpYaCHkVK7i28dKyImLQb3JVlqs3aYSXf7qYuWOW/fgZnTXQ==}
     dependencies:
       csstype: 3.1.2
     dev: true
