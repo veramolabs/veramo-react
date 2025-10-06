@@ -11,8 +11,8 @@
   "dependencies": {
     "@veramo/core": "6.0.1-next.52",
     "@veramo/remote-client": "6.0.1-next.52",
-    "react": "19.1.1",
-    "react-dom": "19.1.1"
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",
