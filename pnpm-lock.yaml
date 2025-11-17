@@ -35,8 +35,8 @@ devDependencies:
     specifier: 10.0.1
     version: 10.0.1(semantic-release@25.0.2)
   '@semantic-release/npm':
-    specifier: 13.1.1
-    version: 13.1.1(semantic-release@25.0.2)
+    specifier: 13.1.2
+    version: 13.1.2(semantic-release@25.0.2)
   '@semantic-release/release-notes-generator':
     specifier: 14.1.0
     version: 14.1.0(semantic-release@25.0.2)
@@ -45,13 +45,13 @@ devDependencies:
     version: 6.9.1
   '@testing-library/react-hooks':
     specifier: 8.0.1
-    version: 8.0.1(@types/react@19.2.2)(react-dom@19.2.0)(react-test-renderer@19.2.0)(react@19.2.0)
+    version: 8.0.1(@types/react@19.2.5)(react-dom@19.2.0)(react-test-renderer@19.2.0)(react@19.2.0)
   '@types/jest':
     specifier: 30.0.0
     version: 30.0.0
   '@types/react':
-    specifier: 19.2.2
-    version: 19.2.2
+    specifier: 19.2.5
+    version: 19.2.5
   '@types/react-test-renderer':
     specifier: 19.1.0
     version: 19.1.0
@@ -2189,8 +2189,8 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/npm@13.1.1(semantic-release@25.0.2):
-    resolution: {integrity: sha512-c4tlp3STYaTYORmMcLjiTaI8SLoxJ0Uf7IXkem8EyihuOM624wnaGuH4OuY2HHcsHDerNAQNzZ8VO6d4PMHSzA==}
+  /@semantic-release/npm@13.1.2(semantic-release@25.0.2):
+    resolution: {integrity: sha512-9rtshDTNlzYrC7uSBtB1vHqFzFZaNHigqkkCH5Ls4N/BSlVOenN5vtwHYxjAR4jf1hNvWSVwL4eIFTHONYckkw==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     peerDependencies:
       semantic-release: '>=20.1.0'
@@ -2206,7 +2206,7 @@ packages:
       normalize-url: 8.0.0
       npm: 11.6.2
       rc: 1.2.8
-      read-pkg: 9.0.0
+      read-pkg: 10.0.0
       registry-auth-token: 5.0.2
       semantic-release: 25.0.2(typescript@5.9.3)
       semver: 7.7.3
@@ -2276,7 +2276,7 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@19.2.2)(react-dom@19.2.0)(react-test-renderer@19.2.0)(react@19.2.0):
+  /@testing-library/react-hooks@8.0.1(@types/react@19.2.5)(react-dom@19.2.0)(react-test-renderer@19.2.0)(react@19.2.0):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -2293,7 +2293,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.22.15
-      '@types/react': 19.2.2
+      '@types/react': 19.2.5
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
       react-error-boundary: 3.1.4(react@19.2.0)
@@ -2389,11 +2389,11 @@ packages:
   /@types/react-test-renderer@19.1.0:
     resolution: {integrity: sha512-XD0WZrHqjNrxA/MaR9O22w/RNidWR9YZmBdRGI7wcnWGrv/3dA8wKCJ8m63Sn+tLJhcjmuhOi629N66W6kgWzQ==}
     dependencies:
-      '@types/react': 19.2.2
+      '@types/react': 19.2.5
     dev: true
 
-  /@types/react@19.2.2:
-    resolution: {integrity: sha512-6mDvHUFSjyT2B2yeNx2nUgMxh9LtOWvkhIU3uePn2I2oyNymUAX1NIsdgviM4CH+JSrp2D2hsMvJOkxY+0wNRA==}
+  /@types/react@19.2.5:
+    resolution: {integrity: sha512-keKxkZMqnDicuvFoJbzrhbtdLSPhj/rZThDlKWCDbgXmUg0rEUFtRssDXKYmtXluZlIqiC5VqkCgRwzuyLHKHw==}
     dependencies:
       csstype: 3.1.2
     dev: true
@@ -5711,7 +5711,7 @@ packages:
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.2)
       '@semantic-release/error': 4.0.0
       '@semantic-release/github': 12.0.0(semantic-release@25.0.2)
-      '@semantic-release/npm': 13.1.1(semantic-release@25.0.2)
+      '@semantic-release/npm': 13.1.2(semantic-release@25.0.2)
       '@semantic-release/release-notes-generator': 14.1.0(semantic-release@25.0.2)
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.0(typescript@5.9.3)
