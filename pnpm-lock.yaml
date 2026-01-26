@@ -45,13 +45,13 @@ devDependencies:
     version: 6.9.1
   '@testing-library/react-hooks':
     specifier: 8.0.1
-    version: 8.0.1(@types/react@19.2.8)(react-dom@19.2.3)(react-test-renderer@19.2.3)(react@19.2.3)
+    version: 8.0.1(@types/react@19.2.9)(react-dom@19.2.3)(react-test-renderer@19.2.3)(react@19.2.3)
   '@types/jest':
     specifier: 30.0.0
     version: 30.0.0
   '@types/react':
-    specifier: 19.2.8
-    version: 19.2.8
+    specifier: 19.2.9
+    version: 19.2.9
   '@types/react-test-renderer':
     specifier: 19.1.0
     version: 19.1.0
@@ -68,8 +68,8 @@ devDependencies:
     specifier: 30.2.0
     version: 30.2.0
   prettier:
-    specifier: 3.8.0
-    version: 3.8.0
+    specifier: 3.8.1
+    version: 3.8.1
   react-test-renderer:
     specifier: 19.2.3
     version: 19.2.3(react@19.2.3)
@@ -2406,7 +2406,7 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@19.2.8)(react-dom@19.2.3)(react-test-renderer@19.2.3)(react@19.2.3):
+  /@testing-library/react-hooks@8.0.1(@types/react@19.2.9)(react-dom@19.2.3)(react-test-renderer@19.2.3)(react@19.2.3):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -2423,7 +2423,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.22.15
-      '@types/react': 19.2.8
+      '@types/react': 19.2.9
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
       react-error-boundary: 3.1.4(react@19.2.3)
@@ -2519,11 +2519,11 @@ packages:
   /@types/react-test-renderer@19.1.0:
     resolution: {integrity: sha512-XD0WZrHqjNrxA/MaR9O22w/RNidWR9YZmBdRGI7wcnWGrv/3dA8wKCJ8m63Sn+tLJhcjmuhOi629N66W6kgWzQ==}
     dependencies:
-      '@types/react': 19.2.8
+      '@types/react': 19.2.9
     dev: true
 
-  /@types/react@19.2.8:
-    resolution: {integrity: sha512-3MbSL37jEchWZz2p2mjntRZtPt837ij10ApxKfgmXCTuHWagYg7iA5bqPw6C8BMPfwidlvfPI/fxOc42HLhcyg==}
+  /@types/react@19.2.9:
+    resolution: {integrity: sha512-Lpo8kgb/igvMIPeNV2rsYKTgaORYdO1XGVZ4Qz3akwOj0ySGYMPlQWa8BaLn0G63D1aSaAQ5ldR06wCpChQCjA==}
     dependencies:
       csstype: 3.2.3
     dev: true
@@ -5537,8 +5537,8 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /prettier@3.8.0:
-    resolution: {integrity: sha512-yEPsovQfpxYfgWNhCfECjG5AQaO+K3dp6XERmOepyPDVqcJm+bjyCVO3pmU+nAPe0N5dDvekfGezt/EIiRe1TA==}
+  /prettier@3.8.1:
+    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
