@@ -45,13 +45,13 @@ devDependencies:
     version: 6.9.1
   '@testing-library/react-hooks':
     specifier: 8.0.1
-    version: 8.0.1(@types/react@19.2.13)(react-dom@19.2.4)(react-test-renderer@19.2.4)(react@19.2.4)
+    version: 8.0.1(@types/react@19.2.14)(react-dom@19.2.4)(react-test-renderer@19.2.4)(react@19.2.4)
   '@types/jest':
     specifier: 30.0.0
     version: 30.0.0
   '@types/react':
-    specifier: 19.2.13
-    version: 19.2.13
+    specifier: 19.2.14
+    version: 19.2.14
   '@types/react-test-renderer':
     specifier: 19.1.0
     version: 19.1.0
@@ -2332,7 +2332,7 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@19.2.13)(react-dom@19.2.4)(react-test-renderer@19.2.4)(react@19.2.4):
+  /@testing-library/react-hooks@8.0.1(@types/react@19.2.14)(react-dom@19.2.4)(react-test-renderer@19.2.4)(react@19.2.4):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -2349,7 +2349,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.22.15
-      '@types/react': 19.2.13
+      '@types/react': 19.2.14
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
       react-error-boundary: 3.1.4(react@19.2.4)
@@ -2441,11 +2441,11 @@ packages:
   /@types/react-test-renderer@19.1.0:
     resolution: {integrity: sha512-XD0WZrHqjNrxA/MaR9O22w/RNidWR9YZmBdRGI7wcnWGrv/3dA8wKCJ8m63Sn+tLJhcjmuhOi629N66W6kgWzQ==}
     dependencies:
-      '@types/react': 19.2.13
+      '@types/react': 19.2.14
     dev: true
 
-  /@types/react@19.2.13:
-    resolution: {integrity: sha512-KkiJeU6VbYbUOp5ITMIc7kBfqlYkKA5KhEHVrGMmUUMt7NeaZg65ojdPk+FtNrBAOXNVM5QM72jnADjM+XVRAQ==}
+  /@types/react@19.2.14:
+    resolution: {integrity: sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==}
     dependencies:
       csstype: 3.2.3
     dev: true
