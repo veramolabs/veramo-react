@@ -45,7 +45,7 @@ devDependencies:
     version: 6.9.1
   '@testing-library/react-hooks':
     specifier: 8.0.1
-    version: 8.0.1(@types/react@19.2.14)(react-dom@19.2.4)(react-test-renderer@19.2.4)(react@19.2.4)
+    version: 8.0.1(@types/react@19.2.14)(react-dom@19.2.4)(react-test-renderer@19.2.5)(react@19.2.4)
   '@types/jest':
     specifier: 30.0.0
     version: 30.0.0
@@ -68,11 +68,11 @@ devDependencies:
     specifier: 30.3.0
     version: 30.3.0
   prettier:
-    specifier: 3.8.1
-    version: 3.8.1
+    specifier: 3.8.2
+    version: 3.8.2
   react-test-renderer:
-    specifier: 19.2.4
-    version: 19.2.4(react@19.2.4)
+    specifier: 19.2.5
+    version: 19.2.5(react@19.2.4)
   semantic-release:
     specifier: 25.0.3
     version: 25.0.3(typescript@5.9.3)
@@ -2225,7 +2225,7 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@19.2.14)(react-dom@19.2.4)(react-test-renderer@19.2.4)(react@19.2.4):
+  /@testing-library/react-hooks@8.0.1(@types/react@19.2.14)(react-dom@19.2.4)(react-test-renderer@19.2.5)(react@19.2.4):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -2246,7 +2246,7 @@ packages:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
       react-error-boundary: 3.1.4(react@19.2.4)
-      react-test-renderer: 19.2.4(react@19.2.4)
+      react-test-renderer: 19.2.5(react@19.2.4)
     dev: true
 
   /@tybys/wasm-util@0.10.1:
@@ -5338,8 +5338,8 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /prettier@3.8.1:
-    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+  /prettier@3.8.2:
+    resolution: {integrity: sha512-8c3mgTe0ASwWAJK+78dpviD+A8EqhndQPUBpNUIPt6+xWlIigCwfN01lWr9MAede4uqXGTEKeQWTvzb3vjia0Q==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -5427,17 +5427,17 @@ packages:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
     dev: true
 
-  /react-is@19.2.4:
-    resolution: {integrity: sha512-W+EWGn2v0ApPKgKKCy/7s7WHXkboGcsrXE+2joLyVxkbyVQfO3MUEaUQDHoSmb8TFFrSKYa9mw64WZHNHSDzYA==}
+  /react-is@19.2.5:
+    resolution: {integrity: sha512-Dn0t8IQhCmeIT3wu+Apm1/YVsJXsGWi6k4sPdnBIdqMVtHtv0IGi6dcpNpNkNac0zB2uUAqNX3MHzN8c+z2rwQ==}
     dev: true
 
-  /react-test-renderer@19.2.4(react@19.2.4):
-    resolution: {integrity: sha512-Ttl5D7Rnmi6JGMUpri4UjB4BAN0FPs4yRDnu2XSsigCWOLm11o8GwRlVsh27ER+4WFqsGtrBuuv5zumUaRCmKw==}
+  /react-test-renderer@19.2.5(react@19.2.4):
+    resolution: {integrity: sha512-kwViRpdISMTpcpy5B6TSewfJzRjnajihRaj57ZmOWKD+SPN6k9LUM13O0pfOuW8ir6B6OOiAXwCRqOoVxRNykA==}
     peerDependencies:
-      react: ^19.2.4
+      react: ^19.2.5
     dependencies:
       react: 19.2.4
-      react-is: 19.2.4
+      react-is: 19.2.5
       scheduler: 0.27.0
     dev: true
 
