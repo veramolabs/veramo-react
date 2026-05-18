@@ -12,11 +12,11 @@ dependencies:
     specifier: 6.0.3-next.65
     version: 6.0.3-next.65
   react:
-    specifier: 19.2.5
-    version: 19.2.5
+    specifier: 19.2.6
+    version: 19.2.6
   react-dom:
-    specifier: 19.2.5
-    version: 19.2.5(react@19.2.5)
+    specifier: 19.2.6
+    version: 19.2.6(react@19.2.6)
 
 devDependencies:
   '@babel/core':
@@ -45,7 +45,7 @@ devDependencies:
     version: 6.9.1
   '@testing-library/react-hooks':
     specifier: 8.0.1
-    version: 8.0.1(@types/react@19.2.14)(react-dom@19.2.5)(react-test-renderer@19.2.5)(react@19.2.5)
+    version: 8.0.1(@types/react@19.2.14)(react-dom@19.2.6)(react-test-renderer@19.2.5)(react@19.2.6)
   '@types/jest':
     specifier: 30.0.0
     version: 30.0.0
@@ -72,7 +72,7 @@ devDependencies:
     version: 3.8.3
   react-test-renderer:
     specifier: 19.2.5
-    version: 19.2.5(react@19.2.5)
+    version: 19.2.5(react@19.2.6)
   semantic-release:
     specifier: 25.0.3
     version: 25.0.3(typescript@5.9.3)
@@ -2244,7 +2244,7 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@19.2.14)(react-dom@19.2.5)(react-test-renderer@19.2.5)(react@19.2.5):
+  /@testing-library/react-hooks@8.0.1(@types/react@19.2.14)(react-dom@19.2.6)(react-test-renderer@19.2.5)(react@19.2.6):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -2262,10 +2262,10 @@ packages:
     dependencies:
       '@babel/runtime': 7.22.15
       '@types/react': 19.2.14
-      react: 19.2.5
-      react-dom: 19.2.5(react@19.2.5)
-      react-error-boundary: 3.1.4(react@19.2.5)
-      react-test-renderer: 19.2.5(react@19.2.5)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      react-error-boundary: 3.1.4(react@19.2.6)
+      react-test-renderer: 19.2.5(react@19.2.6)
     dev: true
 
   /@tybys/wasm-util@0.10.2:
@@ -5424,22 +5424,22 @@ packages:
       strip-json-comments: 2.0.1
     dev: true
 
-  /react-dom@19.2.5(react@19.2.5):
-    resolution: {integrity: sha512-J5bAZz+DXMMwW/wV3xzKke59Af6CHY7G4uYLN1OvBcKEsWOs4pQExj86BBKamxl/Ik5bx9whOrvBlSDfWzgSag==}
+  /react-dom@19.2.6(react@19.2.6):
+    resolution: {integrity: sha512-0prMI+hvBbPjsWnxDLxlCGyM8PN6UuWjEUCYmZhO67xIV9Xasa/r/vDnq+Xyq4Lo27g8QSbO5YzARu0D1Sps3g==}
     peerDependencies:
-      react: ^19.2.5
+      react: ^19.2.6
     dependencies:
-      react: 19.2.5
+      react: 19.2.6
       scheduler: 0.27.0
 
-  /react-error-boundary@3.1.4(react@19.2.5):
+  /react-error-boundary@3.1.4(react@19.2.6):
     resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
     engines: {node: '>=10', npm: '>=6'}
     peerDependencies:
       react: '>=16.13.1'
     dependencies:
       '@babel/runtime': 7.22.15
-      react: 19.2.5
+      react: 19.2.6
     dev: true
 
   /react-is@18.3.1:
@@ -5450,18 +5450,18 @@ packages:
     resolution: {integrity: sha512-Dn0t8IQhCmeIT3wu+Apm1/YVsJXsGWi6k4sPdnBIdqMVtHtv0IGi6dcpNpNkNac0zB2uUAqNX3MHzN8c+z2rwQ==}
     dev: true
 
-  /react-test-renderer@19.2.5(react@19.2.5):
+  /react-test-renderer@19.2.5(react@19.2.6):
     resolution: {integrity: sha512-kwViRpdISMTpcpy5B6TSewfJzRjnajihRaj57ZmOWKD+SPN6k9LUM13O0pfOuW8ir6B6OOiAXwCRqOoVxRNykA==}
     peerDependencies:
       react: ^19.2.5
     dependencies:
-      react: 19.2.5
+      react: 19.2.6
       react-is: 19.2.5
       scheduler: 0.27.0
     dev: true
 
-  /react@19.2.5:
-    resolution: {integrity: sha512-llUJLzz1zTUBrskt2pwZgLq59AemifIftw4aB7JxOqf1HY2FDaGDxgwpAPVzHU1kdWabH7FauP4i1oEeer2WCA==}
+  /react@19.2.6:
+    resolution: {integrity: sha512-sfWGGfavi0xr8Pg0sVsyHMAOziVYKgPLNrS7ig+ivMNb3wbCBw3KxtflsGBAwD3gYQlE/AEZsTLgToRrSCjb0Q==}
     engines: {node: '>=0.10.0'}
 
   /read-package-up@11.0.0:
