@@ -30,16 +30,16 @@ devDependencies:
     version: 7.29.7(@babel/core@7.29.7)
   '@semantic-release/commit-analyzer':
     specifier: 13.0.1
-    version: 13.0.1(semantic-release@25.0.3)
+    version: 13.0.1(semantic-release@25.0.5)
   '@semantic-release/git':
     specifier: 10.0.1
-    version: 10.0.1(semantic-release@25.0.3)
+    version: 10.0.1(semantic-release@25.0.5)
   '@semantic-release/npm':
     specifier: 13.1.5
-    version: 13.1.5(semantic-release@25.0.3)
+    version: 13.1.5(semantic-release@25.0.5)
   '@semantic-release/release-notes-generator':
     specifier: 14.1.1
-    version: 14.1.1(semantic-release@25.0.3)
+    version: 14.1.1(semantic-release@25.0.5)
   '@testing-library/jest-dom':
     specifier: 6.9.1
     version: 6.9.1
@@ -68,14 +68,14 @@ devDependencies:
     specifier: 30.4.1
     version: 30.4.1
   prettier:
-    specifier: 3.8.3
-    version: 3.8.3
+    specifier: 3.8.4
+    version: 3.8.4
   react-test-renderer:
     specifier: 19.2.7
     version: 19.2.7(react@19.2.7)
   semantic-release:
-    specifier: 25.0.3
-    version: 25.0.3(typescript@5.9.3)
+    specifier: 25.0.5
+    version: 25.0.5(typescript@5.9.3)
   ts-jest:
     specifier: 29.4.11
     version: 29.4.11(@babel/core@7.29.7)(babel-jest@30.4.1)(jest@30.4.2)(typescript@5.9.3)
@@ -2138,7 +2138,7 @@ packages:
     resolution: {integrity: sha512-831qok9r2t8AlxLko40y2ebgSDhenenCatLVeW/uBtnHPyhHOvG0C7TvfgecV+wHzIm5KUICgzmVpWS+IMEAeg==}
     dev: true
 
-  /@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.3):
+  /@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.5):
     resolution: {integrity: sha512-wdnBPHKkr9HhNhXOhZD5a2LNl91+hs8CC2vsAVYxtZH3y0dV3wKn+uZSN61rdJQZ8EGxzWB3inWocBHV9+u/CQ==}
     engines: {node: '>=20.8.1'}
     peerDependencies:
@@ -2152,7 +2152,7 @@ packages:
       import-from-esm: 2.0.0
       lodash-es: 4.17.21
       micromatch: 4.0.8
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.5(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2167,7 +2167,7 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@semantic-release/git@10.0.1(semantic-release@25.0.3):
+  /@semantic-release/git@10.0.1(semantic-release@25.0.5):
     resolution: {integrity: sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==}
     engines: {node: '>=14.17'}
     peerDependencies:
@@ -2181,12 +2181,12 @@ packages:
       lodash: 4.17.21
       micromatch: 4.0.5
       p-reduce: 2.1.0
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.5(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@semantic-release/github@12.0.0(semantic-release@25.0.3):
+  /@semantic-release/github@12.0.0(semantic-release@25.0.5):
     resolution: {integrity: sha512-louWFjzZ+1dogfJTY8IuJuBcBUOTliYhBUYNcomnTfj0i959wtRQbr1POgdCoTHK7ut4N/0LNlYTH8SvSJM3hg==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     peerDependencies:
@@ -2206,14 +2206,14 @@ packages:
       lodash-es: 4.17.21
       mime: 4.0.1
       p-filter: 4.1.0
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.5(typescript@5.9.3)
       tinyglobby: 0.2.15
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@semantic-release/npm@13.1.5(semantic-release@25.0.3):
+  /@semantic-release/npm@13.1.5(semantic-release@25.0.5):
     resolution: {integrity: sha512-Hq5UxzoatN3LHiq2rTsWS54nCdqJHlsssGERCo8WlvdfFA9LoN0vO+OuKVSjtNapIc/S8C2LBj206wKLHg62mg==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     peerDependencies:
@@ -2232,12 +2232,12 @@ packages:
       rc: 1.2.8
       read-pkg: 10.0.0
       registry-auth-token: 5.0.2
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.5(typescript@5.9.3)
       semver: 7.7.3
       tempy: 3.1.0
     dev: true
 
-  /@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.3):
+  /@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.5):
     resolution: {integrity: sha512-Pbd2e2XRMUD0OxehHpgd5/YghsE76cddkRHSoDvKLK+OCy4Ewxn49rWR631MEUU01lgwF/uyVXvbnVuu6+Z6VA==}
     engines: {node: '>=20.8.1'}
     peerDependencies:
@@ -2251,7 +2251,7 @@ packages:
       import-from-esm: 2.0.0
       lodash-es: 4.17.21
       read-package-up: 11.0.0
-      semantic-release: 25.0.3(typescript@5.9.3)
+      semantic-release: 25.0.5(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4002,7 +4002,7 @@ packages:
       '@babel/parser': 7.29.0
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.0
-      semver: 7.7.4
+      semver: 7.8.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4316,7 +4316,7 @@ packages:
     resolution: {integrity: sha512-kwCKIvq0MCW1HzLoGola9Te6JUdzgV0loyKJ3Qghrkz9i5/RRIHsL95BMQc2HBBhlBKC4j22K9p11TGHH8RBpQ==}
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
     dependencies:
-      '@babel/code-frame': 7.29.0
+      '@babel/code-frame': 7.29.7
       '@jest/types': 30.4.1
       '@types/stack-utils': 2.0.3
       chalk: 4.1.2
@@ -4507,7 +4507,7 @@ packages:
       jest-message-util: 30.4.1
       jest-util: 30.4.1
       pretty-format: 30.4.1
-      semver: 7.7.4
+      semver: 7.8.1
       synckit: 0.11.8
     transitivePeerDependencies:
       - supports-color
@@ -4811,7 +4811,7 @@ packages:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
     engines: {node: '>=10'}
     dependencies:
-      semver: 7.7.4
+      semver: 7.8.1
     dev: true
 
   /make-error@1.3.6:
@@ -5004,7 +5004,7 @@ packages:
     engines: {node: ^20.17.0 || >=22.9.0}
     dependencies:
       hosted-git-info: 9.0.2
-      semver: 7.7.4
+      semver: 7.8.1
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -5232,7 +5232,7 @@ packages:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==}
     engines: {node: '>=8'}
     dependencies:
-      '@babel/code-frame': 7.29.0
+      '@babel/code-frame': 7.29.7
       error-ex: 1.3.2
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
@@ -5358,8 +5358,8 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /prettier@3.8.3:
-    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+  /prettier@3.8.4:
+    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -5638,16 +5638,16 @@ packages:
   /scheduler@0.27.0:
     resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
-  /semantic-release@25.0.3(typescript@5.9.3):
-    resolution: {integrity: sha512-WRgl5GcypwramYX4HV+eQGzUbD7UUbljVmS+5G1uMwX/wLgYuJAxGeerXJDMO2xshng4+FXqCgyB5QfClV6WjA==}
+  /semantic-release@25.0.5(typescript@5.9.3):
+    resolution: {integrity: sha512-mn61SUJwtM8ThrWn2WmgLVpwVJeG/hPSupua1psdMoufmwRIPyvRLkRkL0JDXkP67OntlLWUYnBnfVc8EDO3/g==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     hasBin: true
     dependencies:
-      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.3)
+      '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.5)
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 12.0.0(semantic-release@25.0.3)
-      '@semantic-release/npm': 13.1.5(semantic-release@25.0.3)
-      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.3)
+      '@semantic-release/github': 12.0.0(semantic-release@25.0.5)
+      '@semantic-release/npm': 13.1.5(semantic-release@25.0.5)
+      '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.5)
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.0(typescript@5.9.3)
       debug: 4.4.3
@@ -5668,7 +5668,7 @@ packages:
       p-reduce: 3.0.0
       read-package-up: 12.0.0
       resolve-from: 5.0.0
-      semver: 7.7.3
+      semver: 7.8.1
       signale: 1.4.0
       yargs: 18.0.0
     transitivePeerDependencies:
