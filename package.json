@@ -31,10 +31,10 @@
     "babel-jest": "30.4.1",
     "jest": "30.4.2",
     "jest-environment-jsdom": "30.4.1",
-    "prettier": "3.9.5",
-    "react-test-renderer": "19.2.7",
+    "prettier": "3.9.6",
+    "react-test-renderer": "19.2.8",
     "semantic-release": "25.0.8",
-    "ts-jest": "29.4.11",
+    "ts-jest": "29.4.12",
     "ts-jest-resolver": "^2.0.1",
     "typescript": "5.9.3",
     "uuid": "^13.0.0"
