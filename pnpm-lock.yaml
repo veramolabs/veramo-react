@@ -35,8 +35,8 @@ devDependencies:
     specifier: 10.0.1
     version: 10.0.1(semantic-release@25.0.9)
   '@semantic-release/npm':
-    specifier: 13.1.5
-    version: 13.1.5(semantic-release@25.0.9)
+    specifier: 13.2.0
+    version: 13.2.0(semantic-release@25.0.9)
   '@semantic-release/release-notes-generator':
     specifier: 14.1.1
     version: 14.1.1(semantic-release@25.0.9)
@@ -68,8 +68,8 @@ devDependencies:
     specifier: 30.5.2
     version: 30.5.2
   prettier:
-    specifier: 3.9.8
-    version: 3.9.8
+    specifier: 3.9.9
+    version: 3.9.9
   react-test-renderer:
     specifier: 19.3.0
     version: 19.3.0(react@19.3.0)
@@ -77,8 +77,8 @@ devDependencies:
     specifier: 25.0.9
     version: 25.0.9(typescript@5.9.3)
   ts-jest:
-    specifier: 29.4.12
-    version: 29.4.12(@babel/core@7.29.7)(babel-jest@30.5.2)(jest@30.5.2)(typescript@5.9.3)
+    specifier: 29.4.14
+    version: 29.4.14(@babel/core@7.29.7)(babel-jest@30.5.2)(jest@30.5.2)(typescript@5.9.3)
   ts-jest-resolver:
     specifier: ^2.0.1
     version: 2.0.1
@@ -2280,8 +2280,8 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/npm@13.1.5(semantic-release@25.0.9):
-    resolution: {integrity: sha512-Hq5UxzoatN3LHiq2rTsWS54nCdqJHlsssGERCo8WlvdfFA9LoN0vO+OuKVSjtNapIc/S8C2LBj206wKLHg62mg==}
+  /@semantic-release/npm@13.2.0(semantic-release@25.0.9):
+    resolution: {integrity: sha512-Uz4JGafLoEGiheLKEs1orockCWP6liY9D2YnvKHYbqo9hCHAw9fuAHcU53q29SXVCtkvDhs/QVUg7Vvuyfp4Jg==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     peerDependencies:
       semantic-release: '>=20.1.0'
@@ -2300,7 +2300,7 @@ packages:
       read-pkg: 10.0.0
       registry-auth-token: 5.0.2
       semantic-release: 25.0.9(typescript@5.9.3)
-      semver: 7.7.3
+      semver: 7.8.5
       tempy: 3.1.0
     dev: true
 
@@ -3202,7 +3202,7 @@ packages:
       conventional-commits-filter: 5.0.0
       handlebars: 4.7.9
       meow: 13.2.0
-      semver: 7.8.1
+      semver: 7.8.5
     dev: true
 
   /conventional-commits-filter@5.0.0:
@@ -5427,8 +5427,8 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /prettier@3.9.8:
-    resolution: {integrity: sha512-WRFq3Wn3WId7LLROfMLdH7xaFr2jR62wU8nLO6rQUOLOxNZUviyJQs1M0iIhLexSFy+L+w0ch66wtoO2jRjG0A==}
+  /prettier@3.9.9:
+    resolution: {integrity: sha512-Z/CJHIkdujO/OtN7nXUii0Rf3VT5SRuhjBA82Xvu2XhBUgX3nhP67T0LHceBdQLex7OOFGTox+Q5Yg8Jk2Qivg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -5715,7 +5715,7 @@ packages:
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.9)
       '@semantic-release/error': 4.0.0
       '@semantic-release/github': 12.0.0(semantic-release@25.0.9)
-      '@semantic-release/npm': 13.1.5(semantic-release@25.0.9)
+      '@semantic-release/npm': 13.2.0(semantic-release@25.0.9)
       '@semantic-release/release-notes-generator': 14.1.1(semantic-release@25.0.9)
       aggregate-error: 5.0.0
       cosmiconfig: 9.0.0(typescript@5.9.3)
@@ -5752,18 +5752,6 @@ packages:
 
   /semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
-    hasBin: true
-    dev: true
-
-  /semver@7.7.3:
-    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dev: true
-
-  /semver@7.8.1:
-    resolution: {integrity: sha512-rkVq3IXh+4FDGch+KwzX3aV9W3kO54GyEgpvBzSyctDA6Xtd7RJQV1xmXbeQp5v7+VzLOfVqiutSE6GICgPFvg==}
-    engines: {node: '>=10'}
     hasBin: true
     dev: true
 
@@ -6134,12 +6122,12 @@ packages:
       jest-resolve: 29.7.0
     dev: true
 
-  /ts-jest@29.4.12(@babel/core@7.29.7)(babel-jest@30.5.2)(jest@30.5.2)(typescript@5.9.3):
-    resolution: {integrity: sha512-Ov6ClY53Fflh6BGAnY2DlTq1hYDrTycz2PVTXBWFW2CU+9zrEqAp9fWdGXl42EXO5RLSFAcAZ2JFKbP+zBTFfw==}
+  /ts-jest@29.4.14(@babel/core@7.29.7)(babel-jest@30.5.2)(jest@30.5.2)(typescript@5.9.3):
+    resolution: {integrity: sha512-+943G6wCX5E3VpzTQhBGBFntCmdT+QAkTvUlp03edTONFBvqskuXPhpyX16xdUotO4P5HQKyppldSWjocoltLQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
-      '@babel/core': '>=7.0.0-beta.0 <8'
+      '@babel/core': '>=7.0.0-beta.0 <9'
       '@jest/transform': ^29.0.0 || ^30.0.0
       '@jest/types': ^29.0.0 || ^30.0.0
       babel-jest: ^29.0.0 || ^30.0.0
