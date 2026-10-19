@@ -12,11 +12,11 @@ dependencies:
     specifier: 7.0.1-next-20260923103806
     version: 7.0.1-next-20260923103806
   react:
-    specifier: 19.3.0
-    version: 19.3.0
+    specifier: 19.3.1
+    version: 19.3.1
   react-dom:
-    specifier: 19.3.0
-    version: 19.3.0(react@19.3.0)
+    specifier: 19.3.1
+    version: 19.3.1(react@19.3.1)
 
 devDependencies:
   '@babel/core':
@@ -45,7 +45,7 @@ devDependencies:
     version: 6.9.1
   '@testing-library/react-hooks':
     specifier: 8.0.1
-    version: 8.0.1(@types/react@19.3.0)(react-dom@19.3.0)(react-test-renderer@19.3.1)(react@19.3.0)
+    version: 8.0.1(@types/react@19.3.0)(react-dom@19.3.1)(react-test-renderer@19.3.1)(react@19.3.1)
   '@types/jest':
     specifier: 30.0.0
     version: 30.0.0
@@ -72,7 +72,7 @@ devDependencies:
     version: 3.9.10
   react-test-renderer:
     specifier: 19.3.1
-    version: 19.3.1(react@19.3.0)
+    version: 19.3.1(react@19.3.1)
   semantic-release:
     specifier: 25.0.9
     version: 25.0.9(typescript@5.9.3)
@@ -2365,7 +2365,7 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks@8.0.1(@types/react@19.3.0)(react-dom@19.3.0)(react-test-renderer@19.3.1)(react@19.3.0):
+  /@testing-library/react-hooks@8.0.1(@types/react@19.3.0)(react-dom@19.3.1)(react-test-renderer@19.3.1)(react@19.3.1):
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -2383,10 +2383,10 @@ packages:
     dependencies:
       '@babel/runtime': 7.22.15
       '@types/react': 19.3.0
-      react: 19.3.0
-      react-dom: 19.3.0(react@19.3.0)
-      react-error-boundary: 3.1.4(react@19.3.0)
-      react-test-renderer: 19.3.1(react@19.3.0)
+      react: 19.3.1
+      react-dom: 19.3.1(react@19.3.1)
+      react-error-boundary: 3.1.4(react@19.3.1)
+      react-test-renderer: 19.3.1(react@19.3.1)
     dev: true
 
   /@tybys/wasm-util@0.10.3:
@@ -5469,7 +5469,7 @@ packages:
     engines: {node: ^18.14.0 || ^20.0.0 || ^22.0.0 || >=24.0.0}
     dependencies:
       '@jest/react-is-18': /react-is@18.3.1
-      '@jest/react-is-19': /react-is@19.3.0
+      '@jest/react-is-19': /react-is@19.3.1
       '@jest/schemas': 30.5.0
       ansi-styles: 5.2.0
     dev: true
@@ -5508,48 +5508,44 @@ packages:
       strip-json-comments: 2.0.1
     dev: true
 
-  /react-dom@19.3.0(react@19.3.0):
-    resolution: {integrity: sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==}
+  /react-dom@19.3.1(react@19.3.1):
+    resolution: {integrity: sha512-Y0bARz53lhEC1NMCASs0/j+faB/zqt3R8hpvg1e8+61ZVJ4UL0UdC4cBbXfZMcIuhrfgeILTLe+ZeBCavQPtKQ==}
     peerDependencies:
-      react: ^19.3.0
+      react: ^19.3.1
     dependencies:
-      react: 19.3.0
+      react: 19.3.1
       scheduler: 0.28.0
 
-  /react-error-boundary@3.1.4(react@19.3.0):
+  /react-error-boundary@3.1.4(react@19.3.1):
     resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
     engines: {node: '>=10', npm: '>=6'}
     peerDependencies:
       react: '>=16.13.1'
     dependencies:
       '@babel/runtime': 7.22.15
-      react: 19.3.0
+      react: 19.3.1
     dev: true
 
   /react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
     dev: true
 
-  /react-is@19.3.0:
-    resolution: {integrity: sha512-UpMYezM4v5/18F28aC66AEsjXIgE02kyEMH6yLdgLXu/UTfa1Ntwck/nNLrbqJsEXW7gPb0coNO9FQse9WTovA==}
-    dev: true
-
   /react-is@19.3.1:
     resolution: {integrity: sha512-RRieF6IyxQBkcK6pP8xOHprLTPW6QjRkbGdImtqNme+/hYVwCZkLQLdlZGOhUqXwkS9IEynaGvPJtv6XB/cz0Q==}
     dev: true
 
-  /react-test-renderer@19.3.1(react@19.3.0):
+  /react-test-renderer@19.3.1(react@19.3.1):
     resolution: {integrity: sha512-YcNewwmnZMd0wTb2nkb4hQ58NmX/u1hW2OJsNpen8CnV+jNkmEjYd1R6wJrOMSgb8bIF5HAJv4iL+S3PwNptOA==}
     peerDependencies:
       react: ^19.3.1
     dependencies:
-      react: 19.3.0
+      react: 19.3.1
       react-is: 19.3.1
       scheduler: 0.28.0
     dev: true
 
-  /react@19.3.0:
-    resolution: {integrity: sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==}
+  /react@19.3.1:
+    resolution: {integrity: sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==}
     engines: {node: '>=0.10.0'}
 
   /read-package-up@11.0.0:
